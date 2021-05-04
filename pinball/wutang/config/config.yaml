@@ -1,5 +1,8 @@
 #config_version=5 
 
+modes:
+  - base
+
 switches:
   s_left_flipper:
     number:
@@ -70,19 +73,14 @@ switches:
     tags: playfield_active
   s_left_slingshot:
     number:
-    tags: playfield_active
   s_right_slingshot:
     number:
-    tags: playfield_active
   s_upper_slingshot:
     number:
-    tags: playfield_active
   s_left_jet_bumper:
     number:
-    tags: playfield_active
   s_right_jet_bumper:
     number:
-    tags: playfield_active
   s_right_ramp_enter:
     number:
     tags: playfield_active
@@ -132,6 +130,8 @@ switches:
     number:
     tags: playfield_active
   s_top_popper:
+    number:
+  s_bottom_popper:
     number:
   s_lower_rebound:
     number:
@@ -194,8 +194,6 @@ coils:
     number:
   c_right_jet_bumper:
     number:
-  c_ring:
-    number:
 
 playfields:
   playfield:
@@ -239,10 +237,6 @@ slides:
 slide_player:
   init_done: welcome_slide
   mode_attract_started: attract_started
-  ball_started:
-    widgets:
-      type: text
-      text: PLAYER (number) BALL (ball)
 
 keyboard:
   z:
@@ -287,10 +281,6 @@ ball_devices:
     eject_coil: c_plunger
     player_controlled_eject_event: s_launch_button_active
     eject_timeouts: 3s
-  bd_mode_start:
-    ball_switches: s_eject
-    eject_coil: c_eject
-    eject_timeout: 1s
   bd_lower_vuk:
     ball_switches: s_bottom_popper
     eject_coil: c_bottom_popper
@@ -299,10 +289,7 @@ ball_devices:
     ball_switches: s_top_popper
     eject_coil: c_top_popper
     eject_timeouts: 2s
-  bd_ring:
-    ball_switches: s_ring_hold
-    eject_coil: c_ring
-    eject_timeouts: 500ms
+
 
 virtual_platform_start_active_switches:
   - s_trough1
@@ -329,7 +316,5 @@ autofire_coils:
     coil: c_right_jet_bumper
     switch: s_right_jet_bumper 
 
-modes:
-  - base
 
 

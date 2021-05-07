@@ -1,7 +1,7 @@
 #config_version=5
 
 mode:
-  start_events: ball_started
+  start_events: ball_starting
   priority: 100
 
 slide_player: 
@@ -26,3 +26,16 @@ slide_player:
         anchor_x: right
         anchor_y: bottom
         font_size: 50
+      - type: text
+        text: 'POTATO VALUE: (potato)'
+        y: 40%
+
+variable_player:
+  s_right_inlane_active:
+    score: 100
+  s_left_flipper_active:
+    score: 1000
+    potato: 1
+  s_right_flipper_active:
+    potato: -2
+

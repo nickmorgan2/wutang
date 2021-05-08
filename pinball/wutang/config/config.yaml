@@ -5,6 +5,7 @@ hardware:
 
 modes:
   - base
+  - mode2
 
 switches:
   s_left_flipper:
@@ -46,7 +47,6 @@ switches:
     tags: start
   s_right_inlane:
     number: 12
-    tags: playfield_active
   s_plumb_bob:
     number:
   s_left_outlane:
@@ -263,6 +263,10 @@ keyboard:
   l:
     switch: s_launch_button
     toggle: true
+  n:
+    event: mode2_start
+  m:
+    event: mode2_stop
 
 ball_devices:
   bd_trough:
@@ -313,6 +317,21 @@ autofire_coils:
   right_jet:
     coil: c_right_jet_bumper
     switch: s_right_jet_bumper 
+
+lights:
+  led_0:
+    start_channel: 0-0
+    subtype: led
+    type: rgb
+  led_1:
+    previous: led_0
+    subtype: led
+    type: rgbw
+  led_2:
+    previous: led_1
+    subtype: led
+    type: rgbw
+
 
 
 

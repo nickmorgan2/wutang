@@ -31,11 +31,34 @@ slide_player:
         y: 40%
 
 variable_player:
-  s_right_inlane_active:
+  my_first_shot_my_first_profile_unlit_hit:
     score: 100
+  my_first_shot_my_first_profile_flashing_hit:
+    score: 1000
   s_left_flipper_active:
     score: 1000
     potato: 1
   s_right_flipper_active:
     potato: -2
+
+shots:
+  my_first_shot:
+    switch: s_right_inlane
+    show_tokens:
+      led: led_1
+    profile: my_first_profile
+
+shot_profiles:
+  my_first_profile:
+    states:
+      - name: unlit  # step 1
+        show: off
+      - name: flashing  # step 2
+        show: flash
+      - name: lit  # step 3
+        show: on
+    loop: true
+
+
+
 

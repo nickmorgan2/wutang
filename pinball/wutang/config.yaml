@@ -1,0 +1,318 @@
+#config_version=5 
+
+hardware:
+  platform: smart_virtual
+
+modes:
+  - base
+
+switches:
+  s_left_flipper:
+    number:
+    tags: left_flipper
+  s_right_flipper:
+    number:
+    tags: right_flipper
+  s_upper_flipper:
+    number:
+    tags: upper_flipper
+  s_trough1:
+    number: 2
+    type: NC
+  s_trough2:
+    number: 3
+    type: NC
+  s_trough3:
+    number: 4
+    type: NC
+  s_trough4:
+    number: 5
+    type: NC
+  s_trough5:
+    number: 6
+    type: NC
+  s_trough6:
+    number: 7
+    type: NC
+  s_trough_jam:
+    number: 8
+    type: NC
+  s_plunger_lane:
+    number:
+  s_launch_button:
+    number:
+  s_start:
+    number: 11
+    tags: start
+  s_right_inlane:
+    number: 12
+    tags: playfield_active
+  s_plumb_bob:
+    number:
+  s_left_outlane:
+    number:
+    tags: playfield_active
+  s_left_inlane:
+    number:
+    tags: playfield_active
+  s_slam_tilt:
+    number:
+  s_coin_door_closed:
+    number:
+  s_standup_1:
+    number:
+    tags: playfield_active
+  s_standup_2:
+    number:
+    tags: playfield_active
+  s_standup_3:
+    number:
+    tags: playfield_active
+  s_standup_4:
+    number:
+    tags: playfield_active
+  s_standup_5:
+    number:
+    tags: playfield_active
+  s_left_slingshot:
+    number:
+  s_right_slingshot:
+    number:
+  s_upper_slingshot:
+    number:
+  s_left_jet_bumper:
+    number:
+  s_right_jet_bumper:
+    number:
+  s_right_ramp_enter:
+    number:
+    tags: playfield_active
+  s_right_ramp_exit:
+    number:
+    tags: playfield_active
+  s_left_ramp_enter:
+    number:
+    tags: playfield_active
+  s_left_ramp_exit:
+    number:
+    tags: playfield_active
+  s_side_ramp_enter:
+    number:
+    tags: playfield_active
+  s_side_ramp_exit:
+    number:
+    tags: playfield_active
+  s_center_ramp:
+    number:
+    tags: playfield_active
+  s_right_loop:
+    number:
+    tags: playfield_active
+  s_left_loop:
+    number:
+    tags: playfield_active
+  s_left_rollover:
+    number:
+    tags: playfield_active
+  s_center_rollover:
+    number:
+    tags: playfield_active
+  s_right_rollover:
+    number:
+    tags: playfield_active
+  s_chase_car_1:
+    number:
+    tags: playfield_active
+  s_chase_car_2:
+    number:
+    tags: playfield_active
+  s_chase_car_standup:
+    number:
+    tags: playfield_active
+  s_upper_rebound:
+    number:
+    tags: playfield_active
+  s_top_popper:
+    number:
+  s_bottom_popper:
+    number:
+  s_lower_rebound:
+    number:
+    tags: playfield_active
+  s_ring_ramp:
+    number:
+    tags: playfield_active
+  s_captive_ball_standup:
+    number:
+    tags: playfield_active
+  s_hive_exit_subway:
+    number:
+  s_hive_exit_pops:
+    number:
+  s_hive_exit_eject:
+    number:
+  s_hive_exit_left_inlane:
+    number:
+
+coils:
+  c_flipper_left_main:
+    number:
+    default_pulse_ms: 20
+  c_flipper_left_hold:
+    number:
+    allow_enable: true
+  c_flipper_right_main:
+    number:
+    default_pulse_ms: 20
+  c_flipper_right_hold:
+    number:
+    allow_enable: true
+  c_flipper_upper_main:
+    number:
+    default_pulse_ms: 20
+  c_flipper_upper_hold:
+    number:
+    allow_enable: true
+  c_trough_eject:
+    number: 
+    default_pulse_ms: 20
+  c_plunger:
+    number:
+    default_pulse_ms: 20
+  c_top_popper:
+    number:
+  c_bottom_popper:
+    number:
+  c_eject:
+    number:
+  c_diverter:
+    number:
+  c_left_slingshot:
+    number:
+  c_right_slingshot:
+    number:
+  c_upper_slingshot:
+    number:
+  c_left_jet_bumper:
+    number:
+  c_right_jet_bumper:
+    number:
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_plunger
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+  upper_flipper:
+    main_coil: c_flipper_upper_main
+    hold_coil: c_flipper_upper_hold
+    activation_switch: s_upper_flipper
+
+displays:
+  window:
+    width: 800
+    height: 600
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: PINBALL!
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 240
+        height: 60
+
+slide_player:
+  init_done: welcome_slide
+
+keyboard:
+  z:
+    switch: s_left_flipper
+  '/':
+    switch: s_right_flipper
+  s:
+    switch: s_start
+  q:
+    switch: s_right_inlane
+  1:
+    switch: s_trough1
+    toggle: true
+  2:
+    switch: s_trough2
+    toggle: true
+  3:
+    switch: s_trough3
+    toggle: true
+  4:
+    switch: s_trough4
+    toggle: true
+  5:
+    switch: s_trough5
+    toggle: true
+  l:
+    switch: s_launch_button
+    toggle: true
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    eject_targets: bd_plunger
+    debug: true
+  bd_plunger:
+    ball_switches: s_plunger_lane
+    entrance_count_delay: 300ms
+    eject_coil: c_plunger
+    player_controlled_eject_event: s_launch_button_active
+    eject_timeouts: 3s
+  bd_lower_vuk:
+    ball_switches: s_bottom_popper
+    eject_coil: c_bottom_popper
+    eject_timeouts: 2s
+  bd_upper_vuk:
+    ball_switches: s_top_popper
+    eject_coil: c_top_popper
+    eject_timeouts: 2s
+
+
+virtual_platform_start_active_switches:
+  - s_trough1
+  - s_trough2
+  - s_trough3
+  - s_trough4
+  - s_trough5
+  - s_trough6
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+  upper_slingshot:
+    coil: c_upper_slingshot
+    switch: s_upper_slingshot
+  left_jet:
+    coil: c_left_jet_bumper
+    switch: s_left_jet_bumper
+  right_jet:
+    coil: c_right_jet_bumper
+    switch: s_right_jet_bumper 
+
+
+

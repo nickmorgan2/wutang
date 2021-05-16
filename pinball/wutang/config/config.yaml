@@ -6,16 +6,17 @@ hardware:
 modes:
   - base
   - mode2
+  - skill
 
 switches:
   s_left_flipper:
-    number:
+    number: 1
     tags: left_flipper
   s_right_flipper:
-    number:
+    number: 9
     tags: right_flipper
   s_upper_flipper:
-    number:
+    number: 10
     tags: upper_flipper
   s_trough1:
     number: 2
@@ -39,120 +40,96 @@ switches:
     number: 8
     type: NC
   s_plunger_lane:
-    number:
+    number: 13
   s_launch_button:
-    number:
+    number: 14
   s_start:
     number: 11
     tags: start
   s_right_inlane:
     number: 12
   s_plumb_bob:
-    number:
+    number: 15
   s_left_outlane:
-    number:
-    tags: playfield_active
+    number: 16
   s_left_inlane:
-    number:
-    tags: playfield_active
+    number: 17
   s_slam_tilt:
-    number:
+    number: 18
   s_coin_door_closed:
-    number:
+    number: 19
   s_standup_1:
-    number:
-    tags: playfield_active
+    number: 20
   s_standup_2:
-    number:
-    tags: playfield_active
+    number: 21
   s_standup_3:
-    number:
-    tags: playfield_active
+    number: 22
   s_standup_4:
-    number:
-    tags: playfield_active
+    number: 23
   s_standup_5:
-    number:
-    tags: playfield_active
+    number: 24
   s_left_slingshot:
-    number:
+    number: 25
   s_right_slingshot:
-    number:
+    number: 26
   s_upper_slingshot:
-    number:
+    number: 27
   s_left_jet_bumper:
-    number:
+    number: 28
   s_right_jet_bumper:
-    number:
+    number: 29
   s_right_ramp_enter:
-    number:
-    tags: playfield_active
+    number: 30
   s_right_ramp_exit:
-    number:
-    tags: playfield_active
+    number: 31
   s_left_ramp_enter:
-    number:
-    tags: playfield_active
+    number: 32
   s_left_ramp_exit:
-    number:
-    tags: playfield_active
-  s_side_ramp_enter:
-    number:
-    tags: playfield_active
+    number: 33
+  s_side_ramp_enter: 
+    number: 34
   s_side_ramp_exit:
-    number:
-    tags: playfield_active
+    number: 35
   s_center_ramp:
-    number:
-    tags: playfield_active
+    number: 36
   s_right_loop:
-    number:
-    tags: playfield_active
+    number: 37
   s_left_loop:
-    number:
-    tags: playfield_active
+    number: 38
   s_left_rollover:
-    number:
-    tags: playfield_active
+    number: 39
   s_center_rollover:
-    number:
-    tags: playfield_active
+    number: 40
   s_right_rollover:
-    number:
-    tags: playfield_active
+    number: 41
   s_chase_car_1:
-    number:
-    tags: playfield_active
+    number: 42
   s_chase_car_2:
-    number:
-    tags: playfield_active
+    number: 43
   s_chase_car_standup:
-    number:
-    tags: playfield_active
+    number: 44
   s_upper_rebound:
-    number:
-    tags: playfield_active
+    number: 45
   s_top_popper:
-    number:
+    number: 46
   s_bottom_popper:
-    number:
+    number: 47
   s_lower_rebound:
-    number:
-    tags: playfield_active
+    number: 48
   s_ring_ramp:
-    number:
-    tags: playfield_active
+    number: 49
   s_captive_ball_standup:
-    number:
-    tags: playfield_active
+    number: 50
   s_hive_exit_subway:
-    number:
+    number: 51
   s_hive_exit_pops:
-    number:
+    number: 52
   s_hive_exit_eject:
-    number:
+    number: 53
   s_hive_exit_left_inlane:
-    number:
+    number: 54
+  s_left_saucer:
+    number: 55
 
 coils:
   c_flipper_left_main:
@@ -267,6 +244,74 @@ keyboard:
     event: mode2_start
   m:
     event: mode2_stop
+  w:
+    switch: s_left_outlane
+  e:
+    switch: s_left_inlane
+  r:
+    switch: s_right_outlane
+  t:
+    switch: s_plumb_bob
+  y:
+    switch: s_standup_1
+  u:
+    switch: s_standup_2
+  i:
+    switch: s_standup_3
+  o:
+    switch: s_standup_4
+  p:
+    switch: s_standup_5
+  a:
+    switch: s_left_slingshot
+  d:
+    switch: s_right_slingshot
+  f:
+    switch: s_upper_slingshot
+  g:
+    switch: s_left_jet_bumper
+  h:
+    switch: s_right_jet_bumper
+  j:
+    switch: s_right_ramp_enter
+  k:
+    switch: s_right_ramp_exit
+  ';':
+    switch: s_left_ramp_enter
+  x:
+    switch: s_left_ramp_exit
+  c:
+    switch: side_ramp_enter
+  v:
+    switch: side_ramp_exit
+  b:
+    switch: s_center_ramp
+  ',':
+    switch: s_right_loop
+  '.':
+    switch: s_left_loop
+  '`':
+    switch: s_left_rollover
+  6:
+    switch: s_center_rollover
+  7:
+    switch: s_right_rollover
+  8:
+    switch: s_chase_car_1
+  9:
+    switch: s_upper_rebound
+  0:
+    switch: s_top_popper
+  '-':
+    switch: s_bottom_popper
+  '=':
+    switch: s_lower_rebound
+  '[':
+    switch: s_ring_ramp
+  ']':
+    switch: s_captive_ball_standup
+  '\':
+    switch: s_left_saucer
 
 ball_devices:
   bd_trough:

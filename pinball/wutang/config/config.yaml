@@ -7,6 +7,7 @@ modes:
   - base
   - mode2
   - skill
+  - carousel
 
 switches:
   s_left_flipper:
@@ -174,6 +175,8 @@ coils:
     number:
   c_right_jet_bumper:
     number:
+  c_left_saucer:
+    number:
 
 playfields:
   playfield:
@@ -336,6 +339,10 @@ ball_devices:
     ball_switches: s_top_popper
     eject_coil: c_top_popper
     eject_timeouts: 2s
+  bd_left_saucer:
+    ball_switches: s_left_saucer
+    eject_coil: c_left_saucer
+    eject_timeouts: 3s
 
 
 virtual_platform_start_active_switches:

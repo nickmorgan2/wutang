@@ -5,9 +5,9 @@ hardware:
 
 modes:
   - base
-  - mode2
   - skill
   - carousel
+  - qualify
 
 switches:
   s_left_flipper:
@@ -93,7 +93,7 @@ switches:
     number: 35
   s_center_ramp:
     number: 36
-  s_right_loop:
+  s_right_spinner:
     number: 37
   s_left_loop:
     number: 38
@@ -243,10 +243,6 @@ keyboard:
   l:
     switch: s_launch_button
     toggle: true
-  n:
-    event: mode2_start
-  m:
-    event: mode2_stop
   w:
     switch: s_left_outlane
   e:
@@ -290,7 +286,7 @@ keyboard:
   b:
     switch: s_center_ramp
   ',':
-    switch: s_right_loop
+    switch: s_right_spinner
   '.':
     switch: s_left_loop
   '`':
@@ -313,7 +309,7 @@ keyboard:
     switch: s_ring_ramp
   ']':
     switch: s_captive_ball_standup
-  '\':
+  'n':
     switch: s_left_saucer
 
 ball_devices:

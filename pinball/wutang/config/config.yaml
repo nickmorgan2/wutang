@@ -131,6 +131,8 @@ switches:
     number: 54
   s_left_saucer:
     number: 55
+  s_right_loop:
+    number: 56
 
 coils:
   c_flipper_left_main:

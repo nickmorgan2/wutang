@@ -42,11 +42,24 @@ variable_player:
     potato: -2
 
 shots:
-  my_first_shot:
-    switch: s_right_inlane
-    show_tokens:
-      led: led_1
-    profile: my_first_profile
+  shot_right_ramp:
+    hit_events: right_ramp_hit
+  shot_left_ramp:
+    hit_events: left_ramp_hit
+  shot_center_ramp:
+    hit_events: right_ramp_hit
+  shot_right_orbit:
+    switches: s_right_loop
+  shot_center_ramp:
+    switches: s_center_ramp
+  shot_left_orbit:
+    switches: s_left_loop
+  shot_car_crash:
+    switches: s_chase_car_1
+  shot_bottom_scoop:
+    switches: s_bottom_popper
+  shot_captive_ ball:
+    switches: s_captive_ball_standup
 
 shot_profiles:
   my_first_profile:
@@ -58,6 +71,20 @@ shot_profiles:
       - name: lit  # step 3
         show: on
     loop: true
+
+sequence_shots:
+  right_ramp:
+    switch_sequence: s_right_ramp_enter, s_right_ramp_exit
+    sequence_timeout: 3s
+  left_ramp:
+    switch_sequence: s_left_ramp_enter, s_left_ramp_exit
+    sequence_timeout: 3s
+  side_ramp:
+    switch_sequence: s_side_ramp_enter, s_side_ramp_exit
+    sequence_timeout: 3s
+  ring_ramp:
+    switch_sequence: s_right_ramp_enter, s_ring_ramp
+    sequence_timeout: 3s
 
 
 

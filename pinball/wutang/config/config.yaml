@@ -8,6 +8,7 @@ modes:
   - skill
   - carousel
   - qualify
+  - tilt
 
 switches:
   s_left_flipper:
@@ -381,6 +382,17 @@ lights:
     previous: led_1
     subtype: led
     type: rgbw
+
+ball_saves:
+  default:
+    active_time: 10s
+    hurry_up_time: 2s
+    grace_period: 2s
+    enable_events: mode_base_started
+    timer_start_events: balldevice_plunger_lane_ball_eject_success
+    auto_launch: true
+    balls_to_save: 1
+    debug: true
 
 
 

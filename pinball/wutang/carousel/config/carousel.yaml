@@ -5,7 +5,17 @@ mode:
   code: mpf.modes.carousel.code.carousel.Carousel
   use_wait_queue: true
 mode_settings:
-  selectable_items: deck, ugod, method, odb, mastakilla, raekwon, ghostface, gza, rza, cappadonna, protect, simple, nuthin, gravel, triumph
+  selectable_items: 
+    - deck{device.counters.deck_shots_counter.complete}
+    - ugod{device.counters.ugod_shots_counter.complete}
+    - method{device.counters.method_shots_counter.complete}
+    - odb{device.counters.odb_shots_counter.complete}
+    - mastakilla{device.counters.mastakilla_shots_counter.complete}
+    - raekwon{device.counters.raekwon_shots_counter.complete}
+    - ghostface{device.counters.ghostface_shots_counter.complete}
+    - gza{device.counters.gza_shots_counter.complete}
+    - rza{device.counters.rza_shots_counter.complete}
+    - cappadonna{device.counter.cappadonna_shots_counter.complete}
   select_item_events: s_start_inactive
   next_item_events: s_right_flipper_inactive
   previous_item_events: s_left_flipper_inactive
@@ -20,11 +30,6 @@ slide_player:
   my_carousel_gza_highlighted: select_gza
   my_carousel_rza_highlighted: select_rza
   my_carousel_cappadonna_highlighted: select_cappadonna
-  my_carousel_protect_highlighted: select_protect
-  my_carousel_simple_highlighted: select_simple
-  my_carousel_nuthin_highlighted: select_nuthin
-  my_carousel_gravel_highlighted: select_gravel
-  my_carousel_triumph_highlighted: select_triumph
 slides:
   select_deck:
     widgets:
@@ -111,51 +116,6 @@ slides:
     widgets:
       - type: text
         text: CAPPADONNA
-        font_size: 100
-        color: yellow
-    transition:
-      type: move_in
-      direction: right
-  select_protect:
-    widgets:
-      - type: text
-        text: PROTECT YA NECK
-        font_size: 100
-        color: yellow
-    transition:
-      type: move_in
-      direction: right
-  select_simple:
-    widgets:
-      - type: text
-        text: CAN IT BE THAT IT WAS ALL SO SIMPLE?
-        font_size: 100
-        color: yellow
-    transition:
-      type: move_in
-      direction: right
-  select_nuthin:
-    widgets:
-      - type: text
-        text: WU-TANG CLAN AINT NUTHIN TO FUCK WIT
-        font_size: 100
-        color: yellow
-    transition:
-      type: move_in
-      direction: right
-  select_gravel:
-    widgets:
-      - type: text
-        text: GRAVEL PIT
-        font_size: 100
-        color: yellow
-    transition:
-      type: move_in
-      direction: right
-  select_triumph:
-    widgets:
-      - type: text
-        text: TRIUMPH
         font_size: 100
         color: yellow
     transition:

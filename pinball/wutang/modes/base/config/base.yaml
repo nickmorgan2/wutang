@@ -4,6 +4,14 @@ mode:
   start_events: ball_starting
   priority: 100
 
+ball_holds:
+  mode_start:
+    balls_to_hold: 1
+    hold_devices: bd_left_saucer
+    enable_events: device.counters.deck_shots_counter.complete, device.counters.ugod_shots_counter.complete, device.counters.method_shots_counter.complete, device.counters.odb_shots_counter.complete, device.counters.mastakilla_shots_counter.complete, device.counters.raekwon_shots_counter.complete, device.counters.ghostface_shots_counter.complete, device.counters.gza_shots_counter.complete, device.counters.rza_shots_counter.complete, device.counter.cappadonna_shots_counter.complete
+    disable_events: multiball_active
+    release_one_events: my_carousel_item_selected
+
 slide_player: 
   mode_base_started:
     widgets:
@@ -46,8 +54,8 @@ shots:
     hit_events: right_ramp_hit
   shot_left_ramp:
     hit_events: left_ramp_hit
-  shot_center_ramp:
-    hit_events: right_ramp_hit
+  shot_side_ramp:
+    hit_events: side_ramp_hit
   shot_right_orbit:
     switches: s_right_loop
   shot_center_ramp:

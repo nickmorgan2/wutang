@@ -180,7 +180,135 @@ coils:
     number:
   c_left_saucer:
     number:
-
+    
+lights:
+  rear_car_crash:
+    number: 0
+    type: grb
+  middle_car_crash:
+    number: 1
+    type: grb
+  front_car_crash:
+    number: 2
+    type: grb
+  rza_r:
+    number: 3
+    type: grb
+  rza_z:
+    number: 4
+    type: grb
+  rza_a:
+    number: 5
+    type: grb
+  between_pops:
+    number: 6
+    type: grb
+  odb_arrow:
+    number: 7
+    type: grb
+  odb_insert:
+    number: 8
+    type: grb
+  mk_arrow:
+    number: 9
+    type: grb
+  mk_insert:
+    number: 10
+    type: grb
+  ugod_arrow:
+    number: 11
+    type: grb
+  ugod_insert:
+    number: 12
+    type: grb
+  extra_ball:
+    number: 13
+    type: grb
+  raekwon_arrow:
+    number: 14
+    type: grb
+  raekwon_insert:
+    number: 15
+    type: grb
+  mm_arrow:
+    number: 16
+    type: grb
+  mm_insert:
+    number: 17
+    type: grb
+  deck_top:
+    number: 18
+    type: grb
+  deck_bottom:
+    number: 19
+    type: grb
+  gk_arrow:
+    number: 20
+    type: grb
+  gk_insert:
+    number: 21
+    type: grb
+  cream_c:
+    number: 22
+    type: grb
+  cream_r:
+    number: 23
+    type: grb
+  cream_e:
+    number: 24
+    type: grb
+  cream_a:
+    number: 25
+    type: grb
+  cream_m:
+    number: 26
+    type: grb
+  captive_ball:
+    number: 27
+    type: grb
+  shaolin:
+    number: 28
+    type: grb
+  simple:
+    number: 29
+    type: grb
+  nuthin: 
+    number: 30
+    type: grb
+  triumph:
+    number: 31
+    type: grb
+  gravel: 
+    number: 32
+    type: grb
+  protect:
+    number: 33
+    type: grb
+  cream_multi:
+    number: 34
+    type: grb
+  left_inlane:
+    number: 35
+    type: grb
+  right_inlane:
+    number: 36
+    type: grb
+  left_ball_save:
+    number: 37
+    type: grb
+  right_ball_save:
+    number: 38
+    type: grb
+  shoot_again:
+    number: 39
+    type: grb
+  gza_arrow:
+    number: 40
+    type: grb
+  gza_insert:
+    number: 41
+    type: grb
+    
 playfields:
   playfield:
     tags: default
@@ -368,20 +496,6 @@ autofire_coils:
   right_jet:
     coil: c_right_jet_bumper
     switch: s_right_jet_bumper 
-
-lights:
-  led_0:
-    start_channel: 0-0
-    subtype: led
-    type: rgb
-  led_1:
-    previous: led_0
-    subtype: led
-    type: rgbw
-  led_2:
-    previous: led_1
-    subtype: led
-    type: rgbw
 
 ball_saves:
   default:

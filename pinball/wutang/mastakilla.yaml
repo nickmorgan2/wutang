@@ -1,0 +1,90 @@
+#config_version=5
+mode: 
+  start_events: masta_killa_selected
+  stop_events: masta_killa_completed
+
+shot_groups:
+  captives:
+    Shots: shot_car_crash, shot_captive_ball
+
+state_machines:
+  masta_killa:
+    persist_state:
+    states:  
+      lower_scoop_1:
+        label: Lower Scoop Lit
+        show_when_active:
+          show_tokens:
+            msg: Shoot Masta Killa Scoop
+      captives_1:
+        label: Captives Lit
+        show_when_active:
+          msg: Shoot Car or Captive Ball
+      lower_scoop_2:
+        label: Lower Scoop Lit
+        show_when_active:
+          show_tokens:
+            msg: Shoot Masta Killa Scoop
+      captives_2:
+        label: Captives Lit
+        show_when_active:
+          msg: Shoot Car or Captive Ball
+      lower_scoop_3:
+        label: Lower Scoop Lit
+        show_when_active:
+          show_tokens:
+            msg: Shoot Masta Killa Scoop
+      captives_3:
+        label: Captives Lit
+        show_when_active:
+          msg: Shoot Car or Captive Ball
+      lower_scoop_4:
+        label: Lower Scoop Lit
+        show_when_active:
+          show_tokens:
+            msg: Shoot Masta Killa Scoop
+      captives_4:
+        label: Captives Lit
+        show_when_active:
+          msg: Shoot Car or Captive Ball
+      lower_scoop_5:
+        label: Lower Scoop Lit
+        show_when_active:
+          show_tokens:
+            msg: Shoot Masta Killa Scoop
+      captives_5:
+        label: Captives Lit
+        show_when_active:
+          msg: Shoot Car or Captive Ball
+    transitions:
+      - events: step1
+        source: lower_scoop_1
+        target: captives_1
+      - events: step2
+        source: captives_1
+        target: Lower_scoop_2
+      - events: step3
+        source: lower_scoop_2
+        target: captives_2
+      - events: step4
+        source: captives_2
+        target: Lower_scoop_3
+      - events: step4
+        source: lower_scoop_3
+        target: captives_3
+      - events: step5
+        source: captives_3
+        target: Lower_scoop_4
+      - events: step6
+        source: lower_scoop_4
+        target: captives_4
+      - events: step7
+        source: captives_4
+        target: Lower_scoop_5
+      - events: step8
+        source: lower_scoop_5
+        target: captives_5
+      - events: step9
+        source: captives_5
+        target: masta_killa_completed
+

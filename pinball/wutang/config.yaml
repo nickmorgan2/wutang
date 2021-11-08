@@ -5,16 +5,29 @@ hardware:
 
 modes:
   - base
+  - skill
+  - carousel
+  - qualify
+  - tilt
+  - deck
+  - rza
+  - gza
+  - ghostface
+  - methodman
+  - mastakilla
+  - odb
+  - ugod
+  - raekwon
 
 switches:
   s_left_flipper:
-    number:
+    number: 1
     tags: left_flipper
   s_right_flipper:
-    number:
+    number: 9
     tags: right_flipper
   s_upper_flipper:
-    number:
+    number: 10
     tags: upper_flipper
   s_trough1:
     number: 2
@@ -38,121 +51,98 @@ switches:
     number: 8
     type: NC
   s_plunger_lane:
-    number:
+    number: 13
   s_launch_button:
-    number:
+    number: 14
   s_start:
     number: 11
     tags: start
   s_right_inlane:
     number: 12
-    tags: playfield_active
   s_plumb_bob:
-    number:
+    number: 15
   s_left_outlane:
-    number:
-    tags: playfield_active
+    number: 16
   s_left_inlane:
-    number:
-    tags: playfield_active
+    number: 17
   s_slam_tilt:
-    number:
+    number: 18
   s_coin_door_closed:
-    number:
+    number: 19
   s_standup_1:
-    number:
-    tags: playfield_active
+    number: 20
   s_standup_2:
-    number:
-    tags: playfield_active
+    number: 21
   s_standup_3:
-    number:
-    tags: playfield_active
+    number: 22
   s_standup_4:
-    number:
-    tags: playfield_active
+    number: 23
   s_standup_5:
-    number:
-    tags: playfield_active
+    number: 24
   s_left_slingshot:
-    number:
+    number: 25
   s_right_slingshot:
-    number:
+    number: 26
   s_upper_slingshot:
-    number:
+    number: 27
   s_left_jet_bumper:
-    number:
+    number: 28
   s_right_jet_bumper:
-    number:
+    number: 29
   s_right_ramp_enter:
-    number:
-    tags: playfield_active
+    number: 30
   s_right_ramp_exit:
-    number:
-    tags: playfield_active
+    number: 31
   s_left_ramp_enter:
-    number:
-    tags: playfield_active
+    number: 32
   s_left_ramp_exit:
-    number:
-    tags: playfield_active
-  s_side_ramp_enter:
-    number:
-    tags: playfield_active
+    number: 33
+  s_side_ramp_enter: 
+    number: 34
   s_side_ramp_exit:
-    number:
-    tags: playfield_active
+    number: 35
   s_center_ramp:
-    number:
-    tags: playfield_active
-  s_right_loop:
-    number:
-    tags: playfield_active
+    number: 36
+  s_right_spinner:
+    number: 37
   s_left_loop:
-    number:
-    tags: playfield_active
+    number: 38
   s_left_rollover:
-    number:
-    tags: playfield_active
+    number: 39
   s_center_rollover:
-    number:
-    tags: playfield_active
+    number: 40
   s_right_rollover:
-    number:
-    tags: playfield_active
+    number: 41
   s_chase_car_1:
-    number:
-    tags: playfield_active
+    number: 42
   s_chase_car_2:
-    number:
-    tags: playfield_active
+    number: 43
   s_chase_car_standup:
-    number:
-    tags: playfield_active
+    number: 44
   s_upper_rebound:
-    number:
-    tags: playfield_active
+    number: 45
   s_top_popper:
-    number:
+    number: 46
   s_bottom_popper:
-    number:
+    number: 47
   s_lower_rebound:
-    number:
-    tags: playfield_active
+    number: 48
   s_ring_ramp:
-    number:
-    tags: playfield_active
+    number: 49
   s_captive_ball_standup:
-    number:
-    tags: playfield_active
+    number: 50
   s_hive_exit_subway:
-    number:
+    number: 51
   s_hive_exit_pops:
-    number:
+    number: 52
   s_hive_exit_eject:
-    number:
+    number: 53
   s_hive_exit_left_inlane:
-    number:
+    number: 54
+  s_left_saucer:
+    number: 55
+  s_right_loop:
+    number: 56
 
 coils:
   c_flipper_left_main:
@@ -197,7 +187,137 @@ coils:
     number:
   c_right_jet_bumper:
     number:
-
+  c_left_saucer:
+    number:
+    
+lights:
+  rear_car_crash:
+    number: 0
+    type: grb
+  middle_car_crash:
+    number: 1
+    type: grb
+  front_car_crash:
+    number: 2
+    type: grb
+  rza_r:
+    number: 3
+    type: grb
+  rza_z:
+    number: 4
+    type: grb
+  rza_a:
+    number: 5
+    type: grb
+  between_pops:
+    number: 6
+    type: grb
+  odb_arrow:
+    number: 7
+    type: grb
+  odb_insert:
+    number: 8
+    type: grb
+  mk_arrow:
+    number: 9
+    type: grb
+  mk_insert:
+    number: 10
+    type: grb
+  ugod_arrow:
+    number: 11
+    type: grb
+  ugod_insert:
+    number: 12
+    type: grb
+  extra_ball:
+    number: 13
+    type: grb
+  raekwon_arrow:
+    number: 14
+    type: grb
+  raekwon_insert:
+    number: 15
+    type: grb
+  mm_arrow:
+    number: 16
+    type: grb
+  mm_insert:
+    number: 17
+    type: grb
+  deck_top:
+    number: 18
+    type: grb
+  deck_bottom:
+    number: 19
+    type: grb
+  gk_arrow:
+    number: 20
+    type: grb
+  gk_insert:
+    number: 21
+    type: grb
+  cream_c:
+    number: 22
+    type: grb
+  cream_r:
+    number: 23
+    type: grb
+  cream_e:
+    number: 24
+    type: grb
+  cream_a:
+    number: 25
+    type: grb
+  cream_m:
+    number: 26
+    type: grb
+  captive_ball:
+    number: 27
+    type: grb
+  shaolin:
+    number: 28
+    type: grb
+  simple:
+    number: 29
+    type: grb
+  nuthin: 
+    number: 30
+    type: grb
+  triumph:
+    number: 31
+    type: grb
+  gravel: 
+    number: 32
+    type: grb
+  protect:
+    number: 33
+    type: grb
+  cream_multi:
+    number: 34
+    type: grb
+  left_inlane:
+    number: 35
+    type: grb
+  right_inlane:
+    number: 36
+    type: grb
+  left_ball_save:
+    number: 37
+    type: grb
+  right_ball_save:
+    number: 38
+    type: grb
+  shoot_again:
+    number: 39
+    type: grb
+  gza_arrow:
+    number: 40
+    type: grb
+  gza_insert:
+    number: 41
+    type: grb
+    
 playfields:
   playfield:
     tags: default
@@ -263,6 +383,74 @@ keyboard:
   l:
     switch: s_launch_button
     toggle: true
+  w:
+    switch: s_left_outlane
+  e:
+    switch: s_left_inlane
+  r:
+    switch: s_right_outlane
+  t:
+    switch: s_plumb_bob
+  y:
+    switch: s_standup_1
+  u:
+    switch: s_standup_2
+  i:
+    switch: s_standup_3
+  o:
+    switch: s_standup_4
+  p:
+    switch: s_standup_5
+  a:
+    switch: s_left_slingshot
+  d:
+    switch: s_right_slingshot
+  f:
+    switch: s_upper_slingshot
+  g:
+    switch: s_left_jet_bumper
+  h:
+    switch: s_right_jet_bumper
+  j:
+    switch: s_right_ramp_enter
+  k:
+    switch: s_right_ramp_exit
+  ';':
+    switch: s_left_ramp_enter
+  x:
+    switch: s_left_ramp_exit
+  c:
+    switch: side_ramp_enter
+  v:
+    switch: side_ramp_exit
+  b:
+    switch: s_center_ramp
+  ',':
+    switch: s_right_spinner
+  '.':
+    switch: s_left_loop
+  '`':
+    switch: s_left_rollover
+  6:
+    switch: s_center_rollover
+  7:
+    switch: s_right_rollover
+  8:
+    switch: s_chase_car_1
+  9:
+    switch: s_upper_rebound
+  0:
+    switch: s_top_popper
+  '-':
+    switch: s_bottom_popper
+  '=':
+    switch: s_lower_rebound
+  '[':
+    switch: s_ring_ramp
+  ']':
+    switch: s_captive_ball_standup
+  'n':
+    switch: s_left_saucer
 
 ball_devices:
   bd_trough:
@@ -287,6 +475,10 @@ ball_devices:
     ball_switches: s_top_popper
     eject_coil: c_top_popper
     eject_timeouts: 2s
+  bd_left_saucer:
+    ball_switches: s_left_saucer
+    eject_coil: c_left_saucer
+    eject_timeouts: 3s
 
 
 virtual_platform_start_active_switches:
@@ -313,6 +505,18 @@ autofire_coils:
   right_jet:
     coil: c_right_jet_bumper
     switch: s_right_jet_bumper 
+
+ball_saves:
+  default:
+    active_time: 10s
+    hurry_up_time: 2s
+    grace_period: 2s
+    enable_events: mode_base_started
+    timer_start_events: balldevice_plunger_lane_ball_eject_success
+    auto_launch: true
+    balls_to_save: 1
+    debug: true
+
 
 
 

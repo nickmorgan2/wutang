@@ -100,3 +100,29 @@ state_machines:
         source: side_ramp_6
         target: raekwon_completed
 
+variable_player:
+  step1:
+    score: 10000
+  step2:
+    score: 15000
+  step3:
+    score: 20000
+  step4:
+    score: 25000
+  step5: 
+    score: 35000
+  step6:
+    score: 50000
+  step7:
+    score: 100000
+  step8:
+    score: 125000
+  step9:
+    score: 150000
+  step10:
+    score: 175000
+  step11:
+    score: 200000
+  raekwon_completed:
+    score: 200000
+

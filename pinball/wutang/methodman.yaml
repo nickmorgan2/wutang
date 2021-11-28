@@ -15,4 +15,9 @@ counters:
     direction: down
     events_when_complete: method_man_completed
 
+variable_player:
+  ramps_hit:
+    score: 20000
+  method_man_completed:
+    score: 200000
 

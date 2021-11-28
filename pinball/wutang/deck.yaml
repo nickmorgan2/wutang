@@ -74,4 +74,21 @@ state_machines:
         Source: car_shot_4
         Target: deck_completed
 
+variable_player:
+  step1:
+    score: 10000
+  step2:
+    score: 15000
+  step3:
+    score: 20000
+  step4:
+    score: 25000
+  step5: 
+    score: 35000
+  step6:
+    score: 50000
+  step7:
+    score: 100000
+  deck_completed:
+    score: 200000
 

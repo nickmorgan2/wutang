@@ -22,3 +22,9 @@ counters:
     count_events: rza_accrual_completed
     count_complete_value: 3
 
+variable_player:
+  rza_accrual_completed:
+    score: 50000
+  rza_completed:
+    score: 200000
+

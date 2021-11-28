@@ -14,4 +14,9 @@ counters:
     direction: down
     events_when_complete: U_god_completed
 
+variable_player:
+  left_orbit_hit:
+    score: 20000
+  u_god_completed:
+    score: 200000
 

@@ -68,3 +68,17 @@ state_machines:
         source: center_ramp_3
         target: odb_completed
 
+variable_player:
+  step1:
+    score: 10000
+  step2:
+    score: 15000
+  step3:
+    score: 20000
+  step4:
+    score: 25000
+  step5: 
+    score: 35000
+  odb_completed:
+    score: 200000
+

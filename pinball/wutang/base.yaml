@@ -55,7 +55,7 @@ shots:
     switches: s_chase_car_1
   shot_bottom_scoop:
     switches: s_bottom_popper
-  shot_captive_ ball:
+  shot_captive_ball:
     switches: s_captive_ball_standup
 
 shot_profiles:

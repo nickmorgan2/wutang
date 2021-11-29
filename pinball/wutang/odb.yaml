@@ -19,38 +19,42 @@ event_player:
 
 state_machines:
   odb:
-    persist_state:
-      states:  
-        accrual_1:
-         label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot each ramp
-        center_ramp_1:
-          label:
-          show_when_active:
-            msg: Shoot Center Jump
-        accrual_2:
-         label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot each ramp
-        center_ramp_2:
-          label:
-          show_when_active:
-            msg: Shoot Center Jump
-        accrual_3:
-         label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot each ramp
-        center_ramp_3:
-          label:
-          show_when_active:
-            msg: Shoot Center Jump
-      transitions:
+    persist_state: true
+    states:  
+      accrual_1:
+        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
+      center_ramp_1:
+        label:
+#        show_when_active:
+#          show_tokens: 
+#            msg: Shoot Center Jump
+      accrual_2:
+        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
+      center_ramp_2:
+        label:
+#        show_when_active:
+#          show_tokens:
+#           msg: Shoot Center Jump
+      accrual_3:
+        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
+      center_ramp_3:
+        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Center Jump
+      odb_completed:
+    transitions:
       - events: step1
-        source:  accrual_1
+        source: accrual_1
         target: center_ramp_1
       - events: step2
         source: center_ramp_1

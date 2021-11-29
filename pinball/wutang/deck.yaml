@@ -2,11 +2,12 @@
 mode: 
   start_events: deck_selected 
   stop_events: deck_completed
-shot_groups:
-  ramps:
-    shots: shot_right_ramp, shot_left_ramp, shot_side_ramp, shot_center_ramp
-  car: 
-    shots: shot_car
+
+#shot_groups:
+#  ramps:
+#    shots: shot_right_ramp, shot_left_ramp, shot_side_ramp, shot_center_ramp
+#  car: 
+#    shots: shot_car_crash
 
 state_machines:
   deck:
@@ -14,65 +15,70 @@ state_machines:
     states:
       right_ramp:
         label: Right Ramp Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Right Ramp
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Right Ramp
       car_shot_1:
         label: Car Lit
-        show_when_active:
-          msg: Shoot Car
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car
       car_shot_2:
         label: Car Lit
-        show_when_active:
-          msg: Shoot Car
+#        show_when_active:
+#          show_tokens:
+#           msg: Shoot Car
       car_shot_3:
         label: Car Lit
-        show_when_active:
-          msg: Shoot Car
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car
       car_shot_4:
         label: Car Lit
-        show_when_active:
-          msg: Shoot Car
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car
       center_ramp: 
         label: Center Ramp Lit
-        show_when_active: 
-          show_tokens:
-            msg: Shoot Center Ramp
+#        show_when_active: 
+#          show_tokens:
+#           msg: Shoot Center Ramp
       left_ramp:
         label: Left Ramp Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Left Ramp
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Left Ramp
       side_ramp:
         label: Side Ramp Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Side Ramp
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Side Ramp
+      deck_completed:
     transitions:
       - events: step1
-        Source: right_ramp
-        Target: car_shot_1
+        source: right_ramp
+        target: car_shot_1
       - events: step2
-        Source: car_shot_1
-        Target: center_ramp
+        source: car_shot_1
+        target: center_ramp
       - events: step3
-        Source: center_ramp
-        Target: car_shot_2
+        source: center_ramp
+        target: car_shot_2
       - events: step4
-        Source: car_shot_2
-        Target: left_ramp
+        source: car_shot_2
+        target: left_ramp
       - events: step4
-        Source: left_ramp
-        Target: car_shot_3
+        source: left_ramp
+        target: car_shot_3
       - events: step5
-        Source: car_shot_3
-        Target: side_ramp
+        source: car_shot_3
+        target: side_ramp
       - events: step6
-        Source: side_ramp
-        Target: car_shot_4
+        source: side_ramp
+        target: car_shot_4
       - events: step7
-        Source: car_shot_4
-        Target: deck_completed
+        source: car_shot_4
+        target: deck_completed
 
 variable_player:
   step1:

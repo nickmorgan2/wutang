@@ -3,44 +3,46 @@ mode:
   start_events: gza_selected
   stop_events: gza_completed
 
-
 shot_groups:
   orbits:
     shots: shot_right_orbit, shot_left_orbit
 
-
 state_machines:
   gza:
-    persist_state:
-      states:  
-        orbits_1:
+    persist_state: true 
+    states:  
+      orbits_1:
          label: 
-          show_when_active:
-            show_tokens:
-              msg: Shoot Orbits
-        center_ramp_1:
-          label:
-          show_when_active:
-            msg: Shoot Center Jump
-        orbits_2:
-         label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Orbits
-        center_ramp_2:
-          label:
-          show_when_active:
-            msg: Shoot Center Jump
-        orbits_3:
-         label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Orbits
-        center_ramp_3:
-          label:
-          show_when_active:
-            msg: Shoot Center Jump
-      transitions:
+#          show_when_active:
+#            show_tokens:
+#              msg: Shoot Orbits
+      center_ramp_1:
+        label:
+#          show_when_active:
+#            show_tokens:
+#              msg: Shoot Center Jump
+      orbits_2:
+       label:
+#          show_when_active:
+#            show_tokens:
+#              msg: Shoot Orbits
+      center_ramp_2:
+        label:
+#          show_when_active:
+#            show_tokens:
+#              msg: Shoot Center Jump
+      orbits_3:
+       label:
+#          show_when_active:
+#            show_tokens:
+#              msg: Shoot Orbits
+      center_ramp_3:
+        label:
+#          show_when_active:
+#            show_tokens:
+#              msg: Shoot Center Jump
+      gza_completed:
+    transitions:
       - events: step1
         source: orbits_1
         target: center_ramp_1

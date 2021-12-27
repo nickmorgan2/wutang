@@ -6,6 +6,7 @@ mode:
     - skill_success
     - skill_failed
   priority: 500
+
 shots:
   skill_rza:
     switch: s_center_rollover

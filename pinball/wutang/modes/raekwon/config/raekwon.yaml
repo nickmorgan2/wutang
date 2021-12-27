@@ -2,6 +2,7 @@
 mode: 
   start_events: raekwon_selected
   stop_events: raekwon_completed
+  priority: 1000
 
 
 state_machines:

@@ -1,6 +1,7 @@
 #config_version=5
 mode:
   start_events: ball_started
+  priority: 1000
 
 counters:
   deck_qualify_counter:

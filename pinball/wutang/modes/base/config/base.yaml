@@ -8,7 +8,7 @@ ball_holds:
   mode_start:
     balls_to_hold: 1
     hold_devices: bd_left_saucer
-    enable_events: device.counters.deck_shots_counter.complete, device.counters.ugod_shots_counter.complete, device.counters.method_shots_counter.complete, device.counters.odb_shots_counter.complete, device.counters.mastakilla_shots_counter.complete, device.counters.raekwon_shots_counter.complete, device.counters.ghostface_shots_counter.complete, device.counters.gza_shots_counter.complete, device.counters.rza_shots_counter.complete, device.counter.cappadonna_shots_counter.complete
+    enable_events:
     disable_events: multiball_active
     release_one_events: my_carousel_item_selected
 
@@ -66,7 +66,7 @@ shots:
     switches: s_chase_car_1
   shot_bottom_scoop:
     switches: s_bottom_popper
-  shot_captive_ ball:
+  shot_captive_ball:
     switches: s_captive_ball_standup
 
 shot_profiles:

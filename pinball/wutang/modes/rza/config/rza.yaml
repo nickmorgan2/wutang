@@ -2,6 +2,7 @@
 mode: 
   start_events: rza_selected
   stop_events: rza_completed
+  priority: 1000
 
 accruals:
   rza_accrual:

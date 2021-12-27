@@ -1,6 +1,0 @@
-2021-04-26 16:21:51,384 : INFO : root : Loading config.
-2021-04-26 16:21:51,388 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2021-04-26 16:21:51,389 : WARNING : ConfigProcessor : Config file in cache changed: /home/nick/code/pinball/wutang/config/config.yaml
-2021-04-26 16:21:51,390 : INFO : ConfigProcessor : Loading config from file /usr/local/lib/python3.6/dist-packages/mpf/mpfconfig.yaml.
-2021-04-26 16:21:51,509 : INFO : ConfigProcessor : Loading config: /usr/local/lib/python3.6/dist-packages/mpf/mpfconfig.yaml
-2021-04-26 16:21:51,510 : INFO : ConfigProcessor : Loading config from file /home/nick/code/pinball/wutang/config/config.yaml.

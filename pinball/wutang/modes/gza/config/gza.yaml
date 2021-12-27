@@ -2,6 +2,7 @@
 mode: 
   start_events: gza_selected
   stop_events: gza_completed
+  priority: 1000
 
 shot_groups:
   orbits:

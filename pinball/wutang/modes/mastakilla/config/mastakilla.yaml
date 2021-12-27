@@ -2,6 +2,7 @@
 mode: 
   start_events: masta_killa_selected
   stop_events: masta_killa_completed
+  priority: 1000
 
 shot_groups:
   captives:

@@ -4,6 +4,7 @@ mode:
   stop_events: my_carousel_item_selected
   code: mpf.modes.carousel.code.carousel.Carousel
   use_wait_queue: true
+  priority: 1000
 
 mode_settings:
   selectable_items: 

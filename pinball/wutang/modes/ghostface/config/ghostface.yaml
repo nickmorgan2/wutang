@@ -2,6 +2,7 @@
 mode: 
   start_events: ghostface_selected
   stop_events: ghostface_completed
+  priority: 1000
 
 counters:
   right_ramp_counter:

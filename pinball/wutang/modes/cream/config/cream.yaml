@@ -3,6 +3,7 @@
 mode:
   start_events: cream_started
   stop_events:
+  priority: 1000
   
 accruals:
   cream_accrual:

@@ -2,6 +2,8 @@
 mode:
   start_events: method_man_selected 
   stop_events: method_man_completed
+  priority: 1000
+
 shot_groups:
   ramps:
     shots: shot_right_ramp, shot_left_ramp

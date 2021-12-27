@@ -2,6 +2,7 @@
 mode: 
   start_events: u_god_selected
   stop_events: u_god_completed
+  priority: 1000
 
 #shots: left_orbit
 

@@ -2,6 +2,7 @@
 mode: 
   start_events: deck_selected 
   stop_events: deck_completed
+  priority: 1000
 
 #shot_groups:
 #  ramps:

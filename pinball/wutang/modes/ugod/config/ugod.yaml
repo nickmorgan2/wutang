@@ -1,0 +1,22 @@
+#config_version=5
+mode: 
+  start_events: u_god_selected
+  stop_events: u_god_completed
+
+#shots: left_orbit
+
+counters:
+  u_god_counter:
+    persist_state: true
+    count_events: left_orbit_hit
+    starting_count: 7
+    count_complete_value: 0
+    direction: down
+    events_when_complete: u_god_completed
+
+variable_player:
+  left_orbit_hit:
+    score: 20000
+  u_god_completed:
+    score: 200000
+

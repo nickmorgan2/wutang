@@ -1,0 +1,126 @@
+#config_version=5
+mode:
+  start_events: carousel_started
+  stop_events: my_carousel_item_selected
+  code: mpf.modes.carousel.code.carousel.Carousel
+  use_wait_queue: true
+
+mode_settings:
+  selectable_items: 
+    - deck{device.counters.deck_shots_counter.complete}
+    - ugod{device.counters.ugod_shots_counter.complete}
+    - method{device.counters.method_shots_counter.complete}
+    - odb{device.counters.odb_shots_counter.complete}
+    - mastakilla{device.counters.mastakilla_shots_counter.complete}
+    - raekwon{device.counters.raekwon_shots_counter.complete}
+    - ghostface{device.counters.ghostface_shots_counter.complete}
+    - gza{device.counters.gza_shots_counter.complete}
+    - rza{device.counters.rza_shots_counter.complete}
+    - cappadonna{device.counter.cappadonna_shots_counter.complete}
+  select_item_events: s_start_inactive
+  next_item_events: s_right_flipper_inactive
+  previous_item_events: s_left_flipper_inactive
+
+slide_player:
+  my_carousel_deck_highlighted: select_deck
+  my_carousel_ugod_highlighted: select_ugod
+  my_carousel_method_highlighted: select_method
+  my_carousel_odb_highlighted: select_odb
+  my_carousel_mastakilla_highlighted: select_mastakilla
+  my_carousel_raekwon_highlighted: select_raekwon
+  my_carousel_ghostface_highlighted: select_ghostface
+  my_carousel_gza_highlighted: select_gza
+  my_carousel_rza_highlighted: select_rza
+  my_carousel_cappadonna_highlighted: select_cappadonna
+
+slides:
+  select_deck:
+    widgets:
+      - type: text
+        text: INSPECTAH DECK
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_ugod:
+    widgets:
+      - type: text
+        text: U-GOD
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_method:
+    widgets:
+      - type: text
+        text: METHOD MAN
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_odb:
+    widgets:
+      - type: text
+        text: OL DIRTY BASTARD
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_mastakilla:
+    widgets:
+      - type: text
+        text: MASTA KILLA
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_raekwon:
+    widgets:
+      - type: text
+        text: RAEKWON
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_ghostface:
+    widgets:
+      - type: text
+        text: GHOSTFACE KILLAH
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_gza:
+    widgets:
+      - type: text
+        text: GZA
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_rza:
+    widgets:
+      - type: text
+        text: RZA
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_cappadonna:
+    widgets:
+      - type: text
+        text: CAPPADONNA
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right

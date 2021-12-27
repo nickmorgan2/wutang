@@ -1,0 +1,16 @@
+#config_version=5
+mode: 
+  start_events: ghostface_selected
+  stop_events: ghostface_completed
+
+counters:
+  right_ramp_counter:
+    count_events: right_ramp_hit
+    count_complete_value: 5
+
+variable_player:
+  right_ramp_hit:
+    score: 50000
+  ghostface_completed:
+    score: 200000
+

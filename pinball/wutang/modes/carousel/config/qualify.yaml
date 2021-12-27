@@ -1,0 +1,115 @@
+#config_version=5
+mode:
+  start_events: ball_started
+
+counters:
+  deck_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_chase_car_1_hit
+  ugod_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_top_popper_hit
+  method_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_left_ramp_exit_hit
+  odb_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_center_ramp_hit
+  mastakilla_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_bottom_popper_hit
+  raekwon_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_side_ramp_hit
+  ghostface_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_left_ramp_exit_hit
+  gza_qualify_counter:
+    starting_count: 0
+    count_complete_value: 30
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_right_spinner_hit
+  rza_qualify_counter:
+    starting_count: 0
+    count_complete_value: 3
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: rollover_complete
+  cappadonna_qualify_counter:
+    starting_count: 0
+    count_complete_value: 20
+    events_when_complete: disable_qualify
+    enable_events: enable_qualify
+    disable_events: disable_qualify
+    start_enabled: true
+    persist_state: true
+    reset_on_complete: false
+    restart_events: reset_qualify_modes
+    count_events: s_captive_ball_standup_hit

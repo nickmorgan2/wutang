@@ -1,0 +1,23 @@
+#config_version=5
+mode:
+  start_events: method_man_selected 
+  stop_events: method_man_completed
+shot_groups:
+  ramps:
+    shots: shot_right_ramp, shot_left_ramp
+
+counters:
+  method_man_counter:
+    persist_state: true
+    count_events: ramps_hit
+    starting_count: 10
+    count_complete_value: 0
+    direction: down
+    events_when_complete: method_man_completed
+
+variable_player:
+  ramps_hit:
+    score: 20000
+  method_man_completed:
+    score: 200000
+

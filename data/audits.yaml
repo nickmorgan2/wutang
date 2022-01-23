@@ -6,6 +6,8 @@ player:
     average: 0
     top: []
     total: 0
+shots:
+  shot_left_ramp: 4
 switches:
   s_bottom_popper: 0
   s_captive_ball_standup: 0
@@ -15,34 +17,34 @@ switches:
   s_chase_car_2: 0
   s_chase_car_standup: 0
   s_coin_door_closed: 0
-  s_hive_exit_eject: 0
-  s_hive_exit_left_inlane: 0
-  s_hive_exit_pops: 0
-  s_hive_exit_subway: 0
-  s_launch_button: 0
+  s_hive_exit_eject: 1
+  s_hive_exit_left_inlane: 1
+  s_hive_exit_pops: 1
+  s_hive_exit_subway: 1
+  s_launch_button: 12
   s_left_flipper: 0
   s_left_inlane: 0
   s_left_jet_bumper: 0
   s_left_loop: 0
   s_left_outlane: 0
-  s_left_ramp_enter: 0
-  s_left_ramp_exit: 0
+  s_left_ramp_enter: 4
+  s_left_ramp_exit: 5
   s_left_rollover: 0
   s_left_saucer: 0
   s_left_slingshot: 0
   s_lower_rebound: 0
   s_plumb_bob: 0
-  s_plunger_lane: 2
+  s_plunger_lane: 4
   s_right_flipper: 0
   s_right_inlane: 1
   s_right_jet_bumper: 0
   s_right_loop: 0
-  s_right_ramp_enter: 0
+  s_right_ramp_enter: 4
   s_right_ramp_exit: 0
   s_right_rollover: 0
   s_right_slingshot: 0
   s_right_spinner: 0
-  s_ring_ramp: 0
+  s_ring_ramp: 1
   s_side_ramp_enter: 0
   s_side_ramp_exit: 0
   s_slam_tilt: 0

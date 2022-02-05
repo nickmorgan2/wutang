@@ -508,6 +508,43 @@ ball_saves:
     balls_to_save: 1
     debug: true
 
+sound_system:
+  tracks:
+    music:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.5
+    voice:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.7
+    sfx:
+      type: standard
+      simultaneous_sounds: 8
+      volume: 0.4
 
+assets:
+  sounds:
+    default:
+      load: on_demand
+    music:
+      track: music
+    sfx:
+      track: sfx
+    voice:
+      track: voice
 
+machine_vars:
+  master_volume:
+    initial_value: 0.25   # Set this to any value you want
+    value_type: float
+    persist: true         # If false, the volume will reset to default
+                          # each time the machine boots up
+sound_player:
+  left_jet_bumper_hit:
+    scratch1
+  right_jet_bumper_hit:
+    scratch2
+  upper_slingshot_hit:
+    scratch3
 

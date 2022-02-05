@@ -537,7 +537,7 @@ assets:
 machine_vars:
   master_volume:
     initial_value: 0.25   # Set this to any value you want
-    value_type: float
+    value_type: floatfff
     persist: true         # If false, the volume will reset to default
                           # each time the machine boots up
 sound_player:

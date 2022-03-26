@@ -94,6 +94,43 @@ sequence_shots:
     switch_sequence: s_right_ramp_enter, s_ring_ramp
     sequence_timeout: 3s
 
+sounds:
+  ruckusbase:
+    file: ruckusbase.wav
+    volume: 0.5
+  reunitedbase:
+    file: reunitedbase.wav
+    volume: 0.5
+  shadowboxinbase:
+    file: shadowboxinbase.wav
+    volume: 0.5
+  tearzbase:
+    file: tearzbase.wav
+    volume: 0.5
+  triumphbase:
+    file: triumph.wav
+    volume: 0.5
 
+sound_pools:
+  basemusic:
+    type: random
+    track: music
+    priority: 100
+    sounds:
+      - ruckusbase
+      - reunitedbase
+      - shadowboxinbase
+      - tearzbase
+      - triumphbase
+
+sound_player:
+  mode_base_started:
+    basemusic:
+      priority: 100
+      loops: -1
+
+
+
+  
 
 

@@ -96,19 +96,19 @@ sequence_shots:
 
 sounds:
   ruckusbase:
-    file: ruckusbase.wav
+    #file: ruckusbase.wav
     volume: 0.5
   reunitedbase:
-    file: reunitedbase.wav
+    #file: reunitedbase.wav
     volume: 0.5
   shadowboxinbase:
-    file: shadowboxinbase.wav
+    #file: shadowboxinbase.wav
     volume: 0.5
   tearzbase:
-    file: tearzbase.wav
+    #file: tearzbase.wav
     volume: 0.5
   triumphbase:
-    file: triumph.wav
+    #file: triumph.wav
     volume: 0.5
 
 sound_pools:
@@ -128,8 +128,18 @@ sound_player:
     basemusic:
       priority: 100
       loops: -1
+  tilt_warning: warningtearz
+  tilt: tilttearz
 
-
+playlists:
+  playliststart:
+    shuffle: true
+    repeat: false
+    sounds:
+      - start1
+      - start2
+      - start3
+      - upfromthe36
 
   
 

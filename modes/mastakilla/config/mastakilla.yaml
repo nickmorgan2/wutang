@@ -117,4 +117,7 @@ variable_player:
   masta_killa_completed:
     score: 200000
 
-
+sounds:
+  oldman:
+    volume: 0.5
+    priority: 100 

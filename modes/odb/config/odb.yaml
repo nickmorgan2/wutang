@@ -87,3 +87,7 @@ variable_player:
   odb_completed:
     score: 200000
 
+sounds:
+  shimmyshimmyya:
+    volume: 0.5
+    priority: 100 

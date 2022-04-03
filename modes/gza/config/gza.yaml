@@ -77,3 +77,7 @@ variable_player:
   gza_completed:
     score: 200000
 
+sounds:
+  liquidswords:
+    volume: 0.5
+    priority: 100 

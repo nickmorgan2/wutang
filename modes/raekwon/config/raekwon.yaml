@@ -134,3 +134,7 @@ variable_player:
   raekwon_completed:
     score: 200000
 
+sounds:
+  icecream:
+    volume: 0.5
+    priority: 100 

@@ -99,3 +99,7 @@ variable_player:
   deck_completed:
     score: 200000
 
+sounds:
+  movement:
+    volume: 0.5
+    priority: 100 

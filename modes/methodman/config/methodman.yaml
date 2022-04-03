@@ -23,3 +23,7 @@ variable_player:
   method_man_completed:
     score: 200000
 
+sounds:
+  methodman:
+    volume: 0.5
+    priority: 100 

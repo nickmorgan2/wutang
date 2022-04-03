@@ -15,3 +15,7 @@ variable_player:
   ghostface_completed:
     score: 200000
 
+sounds:
+  cherchezlaghost:
+    volume: 0.5
+    priority: 100 

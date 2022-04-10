@@ -130,6 +130,17 @@ sound_player:
       loops: -1
   tilt_warning: warningtearz
   tilt: tilttearz
+  s_standup_1: coin
+  s_standup_2: coin
+  s_standup_3: coin
+  s_standup_4: coin
+  s_standup_5: coin
+  s_left_slingshot: sword
+  s_right_slingshop: sword
+  s_right_spinner: spinner
+  s_left_jet_bumper: scratch1
+  s_right_jet_bumper: scratch2
+  s_upper_slingshot: scratch3
 
 playlists:
   playliststart:

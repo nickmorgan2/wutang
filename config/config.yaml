@@ -88,7 +88,7 @@ switches:
     number: 32
   s_left_ramp_exit:
     number: 33
-  s_side_ramp_enter: 
+  s_side_ramp_enter: left_
     number: 34
   s_side_ramp_exit:
     number: 35
@@ -540,11 +540,5 @@ machine_vars:
     # value_type: floatfff
     persist: true         # If false, the volume will reset to default
                           # each time the machine boots up
-sound_player:
-  left_jet_bumper_hit:
-    scratch1
-  right_jet_bumper_hit:
-    scratch2
-  upper_slingshot_hit:
-    scratch3
+
 

@@ -9,7 +9,7 @@ counters:
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -20,7 +20,7 @@ counters:
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -31,7 +31,7 @@ counters:
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -42,7 +42,7 @@ counters:
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -51,20 +51,20 @@ counters:
   mastakilla_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: mastakilla_complete
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
     restart_events: reset_qualify_modes
-    count_events: s_bottom_popper_hit
+    count_events: shot_bottom_scoop_hit
   raekwon_qualify_counter:
     starting_count: 0
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -75,7 +75,7 @@ counters:
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -86,7 +86,7 @@ counters:
     count_complete_value: 30
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -97,7 +97,7 @@ counters:
     count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
@@ -108,12 +108,16 @@ counters:
     count_complete_value: 20
     events_when_complete: disable_qualify
     enable_events: enable_qualify
-    disable_events: disable_qualify
+    disable_events: 
     start_enabled: true
     persist_state: true
     reset_on_complete: false
     restart_events: reset_qualify_modes
     count_events: s_captive_ball_standup_hit
+
+variable_player:
+  mastakilla_complete:
+    mastakilla_qualified: 1
 
 playlists:
   playlistdeckqual:
@@ -127,7 +131,7 @@ playlists:
     shuffle: false
     repeat: false
     sounds:
-      - ghstfaequal1
+      - ghostfacequal1
       - ghostfacequal2
       - ghostfacequal3
   playlistmethodqual:

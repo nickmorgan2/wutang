@@ -1,26 +1,29 @@
 #config_version=5
 mode:
-  start_events: carousel_started
-  stop_events: my_carousel_item_selected
+  start_events: sw_carousel_saucer_active
+  stop_events: carousel_item_selected
   code: mpf.modes.carousel.code.carousel.Carousel
   use_wait_queue: true
   priority: 1000
 
 mode_settings:
   selectable_items: 
-    - deck{device.counters.deck_shots_counter.complete}
-    - ugod{device.counters.ugod_shots_counter.complete}
-    - method{device.counters.method_shots_counter.complete}
-    - odb{device.counters.odb_shots_counter.complete}
-    - mastakilla{device.counters.mastakilla_shots_counter.complete}
-    - raekwon{device.counters.raekwon_shots_counter.complete}
-    - ghostface{device.counters.ghostface_shots_counter.complete}
-    - gza{device.counters.gza_shots_counter.complete}
-    - rza{device.counters.rza_shots_counter.complete}
-    - cappadonna{device.counter.cappadonna_shots_counter.complete}
-  select_item_events: s_start_inactive
-  next_item_events: s_right_flipper_inactive
-  previous_item_events: s_left_flipper_inactive
+    - deck{device.counters.deck_qualify_counter.complete}
+    - ugod{device.counters.ugod_qualify_counter.complete}
+    - method{device.counters.method_qualify_counter.complete}
+    - odb{device.counters.odb_qualify_counter.complete}
+    - mastakilla{current_player.mastakilla_qualified}
+    - raekwon{device.counters.raekwon_qualify_counter.complete}
+    - ghostface{device.counters.ghostface_qualify_counter.complete}
+    - gza{device.counters.gza_qualify_counter.complete}
+    - rza{device.counters.rza_qualify_counter.complete}
+    #- cappadonna{device.counter.cappadonna_shots_counter.complete}
+  select_item_events: s_launch_button_active
+  next_item_events: s_right_flipper_active
+  previous_item_events: s_left_flipper_active
+
+event_player:
+  select_mastakilla: mode_mastakilla_start
 
 slide_player:
   my_carousel_deck_highlighted: select_deck

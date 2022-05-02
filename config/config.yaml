@@ -7,6 +7,7 @@ modes:
   - base
   - skill
   - carousel
+  - mastakilla
   - qualify
   - tilt
 
@@ -88,7 +89,7 @@ switches:
     number: 32
   s_left_ramp_exit:
     number: 33
-  s_side_ramp_enter: left_
+  s_side_ramp_enter: 
     number: 34
   s_side_ramp_exit:
     number: 35
@@ -132,6 +133,7 @@ switches:
     number: 54
   s_left_saucer:
     number: 55
+    tags: carousel_saucer
   s_right_loop:
     number: 56
 
@@ -333,19 +335,23 @@ displays:
     width: 800
     height: 600
 
-slides:
-  welcome_slide:
-    widgets:
-      - type: text
-        text: PINBALL!
-        font_size: 50
-        color: red
-      - type: rectangle
-        width: 240
-        height: 60
+#slides:
+#  welcome_slide:
+#    widgets:
+#      - type: text
+#        text: PINBALL!
+#        font_size: 50
+#        color: red
+#      - type: rectangle
+#        width: 240
+#        height: 60
+player_vars:
+  mastakilla_qualified:
+    initial_value: 0
+    value_type: int
 
 slide_player:
-  init_done: welcome_slide
+#  init_done: welcome_slide
 
 keyboard:
   z:

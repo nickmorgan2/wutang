@@ -10,9 +10,11 @@ ball_holds:
     hold_devices: bd_left_saucer
     enable_events:
     disable_events: multiball_active
-    release_one_events: my_carousel_item_selected
+    #release_one_events: my_carousel_item_selected
 
-slide_player: 
+slide_player:
+  # Main display
+  # TODO - add gif for landing animation on first ball
   mode_base_started:
     widgets:
       - type: text
@@ -20,10 +22,12 @@ slide_player:
         number_grouping: true
         min_digits: 2
         font_size: 100
+        color: green
       - type: text
         text: PLAYER (number)
         y: 10
         x: 10
+        color: green
         font_size: 50
         anchor_x: left
         anchor_y: bottom
@@ -33,16 +37,16 @@ slide_player:
         x: right-10
         anchor_x: right
         anchor_y: bottom
+        color: green
         font_size: 50
-      - type: text
-        text: 'POTATO VALUE: (potato)'
-        y: 40%
 
 variable_player:
   my_first_shot_my_first_profile_unlit_hit:
     score: 100
   my_first_shot_my_first_profile_flashing_hit:
     score: 1000
+  s_bottom_popper_active:
+    score: 100
   s_left_flipper_active:
     score: 1000
     potato: 1
@@ -130,17 +134,17 @@ sound_player:
       loops: -1
   tilt_warning: warningtearz
   tilt: tilttearz
-  s_standup_1: coin
-  s_standup_2: coin
-  s_standup_3: coin
-  s_standup_4: coin
-  s_standup_5: coin
-  s_left_slingshot: sword
-  s_right_slingshop: sword
-  s_right_spinner: spinner
-  s_left_jet_bumper: scratch1
-  s_right_jet_bumper: scratch2
-  s_upper_slingshot: scratch3
+  s_standup_1_active: coin
+  s_standup_2_active: coin
+  s_standup_3_active: coin
+  s_standup_4_active: coin
+  s_standup_5_active: coin
+  s_left_slingshot_active: sword
+  s_right_slingshop_active: sword
+  s_right_spinner_active: spinner
+  s_left_jet_bumper_active: scratch1
+  s_right_jet_bumper_active: scratch2
+  s_upper_slingshot_active: scratch3
 
 playlists:
   playliststart:

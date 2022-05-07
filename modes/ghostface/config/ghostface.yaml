@@ -4,18 +4,18 @@ mode:
   stop_events: ghostface_completed
   priority: 1000
 
-counters:
-  right_ramp_counter:
-    count_events: right_ramp_hit
-    count_complete_value: 5
+#counters:
+#  right_ramp_counter:
+#    count_events: right_ramp_hit
+#    count_complete_value: 5
 
-variable_player:
-  right_ramp_hit:
-    score: 50000
-  ghostface_completed:
-    score: 200000
+#variable_player:
+#  right_ramp_hit:
+#    score: 50000
+#  ghostface_completed:
+#    score: 200000
 
-sounds:
-  cherchezlaghost:
-    volume: 0.5
-    priority: 100 
+#sounds:
+#  cherchezlaghost:
+#    volume: 0.5
+#    priority: 100 

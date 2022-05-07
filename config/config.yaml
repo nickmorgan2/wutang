@@ -8,6 +8,14 @@ modes:
   - skill
   - carousel
   - mastakilla
+  - deck
+  - ugod
+  - methodman
+  - odb
+  - ghostface
+  - gza
+  - raekwon
+  - rza
   - qualify
   - tilt
 
@@ -347,6 +355,30 @@ displays:
 #        height: 60
 player_vars:
   mastakilla_qualified:
+    initial_value: 0
+    value_type: int
+  deck_qualified:
+    initial_value: 0
+    value_type: int
+  ghostface_qualified:
+    initial_value: 0
+    value_type: int
+  gza_qualified:
+    initial_value: 0
+    value_type: int
+  method_qualified:
+    initial_value: 0
+    value_type: int
+  odb_qualified:
+    initial_value: 0
+    value_type: int
+  raekwon_qualified:
+    initial_value: 0
+    value_type: int
+  rza_qualified:
+    initial_value: 0
+    value_type: int
+  ugod_qualified:
     initial_value: 0
     value_type: int
 

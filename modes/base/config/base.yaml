@@ -14,7 +14,6 @@ ball_holds:
 
 slide_player:
   # Main display
-  # TODO - add gif for landing animation on first ball
   mode_base_started:
     widgets:
       - type: text
@@ -47,11 +46,71 @@ variable_player:
     score: 1000
   s_bottom_popper_active:
     score: 100
-  s_left_flipper_active:
-    score: 1000
-    potato: 1
-  s_right_flipper_active:
-    potato: -2
+  s_right_inlane_active:
+    score: 10
+  s_plumb_bob_active:
+    score: 50
+  s_left_outlane_active:
+    score: 100
+  s_left_inlane_active:
+    score: 10
+  s_standup_1_active:
+    score: 40
+  s_standup_2_active:
+    score: 40
+  s_standup_3_active:
+    score: 40
+  s_standup_4_active:
+    score: 40
+  s_standup_5_active:
+    score: 40
+  s_right_slingshot_active:
+    score: 30
+  s_left_slingshot_active:
+    score: 30
+  s_upper_slingshot_active:
+    score: 30
+  s_left_jet_bumper_active:
+    score: 30
+  s_right_jet_bumper_active:
+    score: 30
+#todo change ramp exit switch scoring to shot scoring
+  s_right_ramp_exit_active:
+    score: 100
+  s_left_ramp_exit_active:
+    score: 100
+  s_side_ramp_exit_active:
+    score: 100
+  s_center_ramp_active:
+    score: 100
+  s_right_spinner_active:
+    score: 10
+  s_left_loop_active:
+    score: 50
+  s_right_rollover_active:
+    score: 10
+  s_center_rollover_active:
+    score: 10
+  s_left_rollover_active:
+    score: 10
+  s_chase_car_1_active:
+    score: 20
+  s_chase_car_2_active:
+    score: 30
+  s_chase_car_standup_active:
+    score: 50
+  s_upper_rebound_active:
+    score: 10
+  s_top_popper_active:
+    score: 50
+  s_lower_rebound_active:
+    score: 10
+  s_ring_ramp_active:
+    score: 100
+  s_left_saucer_active:
+    score: 50
+  s_right_loop:
+    score: 50
 
 shots:
   shot_right_ramp:

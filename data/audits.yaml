@@ -7,17 +7,17 @@ player:
     top: []
     total: 0
 shots:
-  shot_bottom_scoop: 249
+  shot_bottom_scoop: 280
   shot_car_crash: 6
   shot_center_ramp: 12
   shot_left_orbit: 3
   shot_left_ramp: 17
   shot_side_ramp: 2
-  skill_mk: 136
+  skill_mk: 155
   skill_raekwon: 4
   skill_rza: 4
 switches:
-  s_bottom_popper: 249
+  s_bottom_popper: 280
   s_captive_ball_standup: 0
   s_center_ramp: 12
   s_center_rollover: 4
@@ -29,7 +29,7 @@ switches:
   s_hive_exit_left_inlane: 1
   s_hive_exit_pops: 1
   s_hive_exit_subway: 1
-  s_launch_button: 96
+  s_launch_button: 106
   s_left_flipper: 0
   s_left_inlane: 0
   s_left_jet_bumper: 21
@@ -42,7 +42,7 @@ switches:
   s_left_slingshot: 34
   s_lower_rebound: 0
   s_plumb_bob: 12
-  s_plunger_lane: 66
+  s_plunger_lane: 76
   s_right_flipper: 0
   s_right_inlane: 1
   s_right_jet_bumper: 26

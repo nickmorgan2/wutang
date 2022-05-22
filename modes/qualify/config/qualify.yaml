@@ -53,6 +53,7 @@ counters:
     count_complete_value: 3
     events_when_complete: mastakilla_complete
     enable_events: enable_qualify
+    events_when_hit: mkq_hit
     disable_events: 
     start_enabled: true
     persist_state: true
@@ -170,14 +171,27 @@ playlists:
       - ugodqual2
       - ugodqual3
  
-playlist_player:
-  shot_bottom_scoop_hit:
-    playlist_track:
-      playlist: playlistmkqual
-      action: play
+#playlist_player:
+#  shot_bottom_scoop_hit:
+#    playlist_track:
+#      playlist: playlistmkqual
+#      action: play
   #playlist_track_playlist_sound_stopped:
   #  playlist:
   #    action: advance
+
+shows:
+  play_qual_sound:
+    - time: 0
+      events:
+        play_sound: {"sound": (sound_to_play), "volume": 0.7, "loops": 0}
+
+show_player:
+  # MKqualifier
+  shot_bottom_scoop_hit{count==1}:
+    play_qual_sound:
+      show_tokens:
+        sound_to_play: mkqual1
 
 sound_player:
   s_chase_car_1_hit: playlistdeckqual
@@ -189,3 +203,4 @@ sound_player:
   rollover_complete: playlistrzaqual
   s_right_ramp_exit_hit: playlistghostfacequal
   gza_qualify_counter_complete: gzaqual3
+

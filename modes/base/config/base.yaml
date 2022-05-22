@@ -109,7 +109,7 @@ variable_player:
     score: 100
   s_left_saucer_active:
     score: 50
-  s_right_loop:
+  s_right_loop_active:
     score: 50
 
 shots:

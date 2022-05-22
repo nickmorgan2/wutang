@@ -560,6 +560,10 @@ sound_system:
       type: standard
       simultaneous_sounds: 8
       volume: 0.4
+    playlist_track:
+      type: playlist
+      volume: 0.7
+      #crossfade_time: 2s
 
 assets:
   sounds:

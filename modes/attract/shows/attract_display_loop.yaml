@@ -2,15 +2,27 @@
 
 - duration: 3s
   slides:
-    awesome_slide:
+    wutang_attract_slide:
       widgets:
       - type: text
-        text: YOU ARE AWESOME
+        text: WU-TANG PINBALL
         font_size: 50
       transition:
         type: push
         duration: 1s
         direction: left
+
+- duration: 3s
+  slides:
+    wutang_attract_logo_slide:
+      widgets:
+      - type: image
+        image: wutanglogo
+      transition:
+        type: push
+        duration: 1s
+        direction: left
+
 
 - duration: 3s
   slides:

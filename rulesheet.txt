@@ -1,0 +1,126 @@
+wutang rulesheet
+
+
+A wutang pinball machine based on layout of Demolition Man, running mission pinball framework on a linux pc and p3-roc controller
+
+
+Goal:  collect all nine members of the wutang to swarm in Triumph
+
+qualify members by shooting their shot three times.  Then shoot mode start saucer to select them.  Make necessary shots to complete mode and add member.
+
+
+Member Modes
+
+Inspecta Deck
+  - to qualify- hit car crash lane 3x, shoot saucer and select
+  - Song: The Movememnt (3:40)
+  - Shoot sequence of shots- R Ramp, Car, Center Ramp, car, left ramp, car, side ramp, car
+  - completion bonus 5000 x seconds remaining
+
+
+U-God
+  - to qualify- left orbit to upper scoop 3x, shoot saucer and select
+  - song: Bizarre (3:17)
+  - shoot 7 left orbit shots in time
+  - 1st orbit to scoop 20k
+  - pop bumpers increase upper scoop by 5k
+  - shoot right ramp with open diverter to complete
+  - completion bonus 5k x seconds remaining
+
+Method Man
+  - to qualify- shoot left ramp 3x, shoot saucer and select
+  - song: Method Man (4:31)
+  - shoot 10 left or right ramps.  each ramp is a 20 sec countdown from 50k to 5k
+  - shoot right ramp with open diverter to complete
+  - completion bonus 200k
+
+ODB
+  - to qualify- shoot center jump-off ramp 3x, shoot saucer and select
+  - Song: Shimmy Shimmy Ya (2:41)
+  - accrue 3 ramps (S,L,R)
+  - each ramp starts center ramp hurry up 50k-5k in 15 secs
+  - shoot right ramp with open diverter to complete
+  - completion bonus 5000 x remaining seconds
+
+Masta Killa
+  - to qualify- center scoop 3x, shoot saucer and select
+  - song: Old Man (2:26)
+  - shoot scoop 10k
+  - shoot captives: 50k for upper car target, 35k for lower captive ball, 25k for car
+  - repeat 5x, values increase 1.5x each time
+  - shoot right ramp with open diverter to complete
+  - completion bonus 10kxremaining seconds
+
+Raekwon
+  - to qualify- shoot side ramp 3x, shoot saucer and select
+  - Song: Ice Cream (4:13)
+  - r orbit to side ramp 30k
+  - center ramp to side ramp 30k
+  - complete 3x, value increase 2x each time
+  - shoot right ramp with open diverter to complete
+  - completion bonus 10k x remaining seconds
+
+Ghostface Killah
+  - qualify- right ramp 3x to qualify, shoot saucer and select
+  - Song: Cherchez La Ghost (2:25)
+  - diverter open, each R ramp a countdown from 50k to 5k in 30s
+  - make 5 right ramps, final ramp completes
+  - completion bonus 5x remaining s
+
+GZA
+  - to qualify- right orbit 3x, shoot saucer and select
+  - song: liquid swords (2:59)
+  - alternate ramps and spinner, ramps set spinner value
+  - center ramp 1k/spin, r ramp 3k, l ramp 6k, s ramp 9k
+  - each spinner shot relights all ramps
+  - 5 lit ramps plus final shot to right ramp completes
+
+RZA
+  - to qualify- complete upper rollovers 3x, shoot saucer and select
+  - song: holocaust/silkworm (5:03)
+  - complete all 5 rollovers 3x, completions award 50 + 2k/pop hit or spinner spin
+
+
+Song Modes- 
+
+CREAM
+  - to start, complete CREAM standups, starts immediately
+  - Song CREAM if not already in a member mode- can be stacked with member modes
+  - add-a-ball multiball
+  - CREAM targets worth 5k, completion awards 100k jackpot + add a ball + 10 sec ball save
+
+Protect Ya Neck
+  - available in saucer after three members collected
+  - multiball
+
+Gravel Pit
+  - available in saucer after six members collected
+  - multiball
+
+Can It Be all so simple?
+  - starts immediately when Raekwon + Ghostface collected
+  - all lights go dark (callout- everybody talks about the good old days...)
+  - single ball mode, 
+  - complete six ramp combos- R, L, S ramps lit for 50k, begins 10s hurry up from 200k on other two ramps
+  - completed after six combos or drain/time out (4:11)
+
+WuTang Clan Ain't Nuthin to F Wit
+  - starts immediately when Method Man, RZA, Inspectah Deck collected
+  - 4 ball multiball  
+  - all major shots lit for 100k jackpots, 50 switch hits relights and increases jackpots by 100k
+
+Triumph
+  - begins after all nine members collected
+  - multiball
+
+Cappadonna
+  - easter egg mode starts on 50+ hits to lower captive ball if not currently in a mode
+  - song: Milk the Cow
+  - timed switch hit mode (60s) each switch worth 2k, adds cow widget to screen
+
+extra ball- lit after two members collected or as mystery award
+
+Mystery- available at saucer after completing both inlanes
+
+
+

@@ -147,49 +147,53 @@ switches:
 
 coils:
   c_flipper_left_main:
-    number:
+    number: A0-B0-4
     default_pulse_ms: 20
   c_flipper_left_hold:
-    number:
+    number: A0-B0-5
     allow_enable: true
   c_flipper_right_main:
-    number:
+    number: A0-B0-2
     default_pulse_ms: 20
   c_flipper_right_hold:
-    number:
+    number: A0-B0-3
     allow_enable: true
   c_flipper_upper_main:
-    number:
+    number: A1-B0-0
     default_pulse_ms: 20
   c_flipper_upper_hold:
-    number:
+    number: A1-B0-1
     allow_enable: true
   c_trough_eject:
-    number: 
+    number: A0-B0-0
     default_pulse_ms: 20
   c_plunger:
-    number:
+    number: A0-B0-1
     default_pulse_ms: 20
   c_top_popper:
-    number:
+    number: A1-B1-0
   c_bottom_popper:
-    number:
-  c_eject:
-    number:
+    number: A1-B0-2
+  c_hive_jet:
+    number: A1-B1-2
+  c-ring_magnet:
+    number: A1-B1-1
   c_diverter:
-    number:
+    number: A1-B0-7
   c_left_slingshot:
-    number:
+    number: A0-B0-7
   c_right_slingshot:
-    number:
+    number: A0-B0-6
   c_upper_slingshot:
-    number:
+    number: A1-B0-4
   c_left_jet_bumper:
-    number:
+    number: A1-B0-6
   c_right_jet_bumper:
-    number:
+    number: A1-B0-5
   c_left_saucer:
-    number:
+    number: A0-B1-0
+  c-knocker:
+    number: A1-B1-4
     
 lights:
   rear_car_crash:

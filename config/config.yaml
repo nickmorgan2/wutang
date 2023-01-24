@@ -21,129 +21,129 @@ modes:
 
 switches:
   s_left_flipper:
-    number: 1
+    number: A0-B1-2
     tags: left_flipper
   s_right_flipper:
-    number: 9
+    number: A0-B1-3
     tags: right_flipper
   s_upper_flipper:
-    number: 10
+    number: A1-B0-5
     tags: upper_flipper
   s_trough1:
-    number: 2
+    number: A0-B0-0
     type: NC
   s_trough2:
-    number: 3
+    number: A0-B0-1
     type: NC
   s_trough3:
-    number: 4
+    number: A0-B0-2
     type: NC
   s_trough4:
-    number: 5
+    number: A0-B0-3
     type: NC
   s_trough5:
-    number: 6
+    number: A0-B0-4
     type: NC
   s_trough6:
-    number: 7
+    number: A0-B0-5
     type: NC
   s_trough_jam:
-    number: 8
+    number: A0-B0-6
     type: NC
   s_plunger_lane:
-    number: 13
+    number: A0-B0-7
   s_launch_button:
-    number: 14
+    number: A4-B0-5
   s_start:
-    number: 11
+    number: A4-B0-4
     tags: start
   s_right_inlane:
-    number: 12
+    number: A0-B1-4
   s_plumb_bob:
-    number: 15
+    number: A4-B0-0
   s_left_outlane:
-    number: 16
+    number: A0-B1-0
   s_left_inlane:
-    number: 17
+    number: A0-B1-1
   s_slam_tilt:
-    number: 18
+    number: A4-B0-1
   s_coin_door_closed:
-    number: 19
+    number: A4-B0-6
   s_standup_1:
-    number: 20
+    number: A1-B0-7
   s_standup_2:
-    number: 21
+    number: A1-B0-6
   s_standup_3:
-    number: 22
+    number: A1-B0-4
   s_standup_4:
-    number: 23
+    number: A1-B0-2
   s_standup_5:
-    number: 24
+    number: A1-B0-1
   s_left_slingshot:
-    number: 25
+    number: A0-B1-6
   s_right_slingshot:
-    number: 26
+    number: A0-B1-7
   s_upper_slingshot:
-    number: 27
+    number: A2-B0-6
   s_left_jet_bumper:
-    number: 28
+    number: A2-B0-5
   s_right_jet_bumper:
-    number: 29
+    number: A2-B0-3
   s_right_ramp_enter:
-    number: 30
+    number: A1-B1-1
   s_right_ramp_exit:
-    number: 31
+    number: A2-B1-0
   s_left_ramp_enter:
-    number: 32
+    number: A1-B1-3
   s_left_ramp_exit:
-    number: 33
+    number: A2-B1-6
   s_side_ramp_enter: 
-    number: 34
+    number: A1-B1-2
   s_side_ramp_exit:
-    number: 35
+    number: A2-B1-5
   s_center_ramp:
-    number: 36
+    number: A2-B1-2
   s_right_spinner:
-    number: 37
+    number: A1-B0-0
   s_left_loop:
-    number: 38
+    number: A3-B1-4
   s_left_rollover:
-    number: 39
+    number: A2-B0-4
   s_center_rollover:
-    number: 40
+    number: A2-B0-2
   s_right_rollover:
-    number: 41
+    number: A2-B0-1
   s_chase_car_1:
-    number: 42
+    number: A3-B1-3
   s_chase_car_2:
-    number: 43
+    number: A3-B1-2
   s_chase_car_standup:
-    number: 44
+    number: A3-B1-1
   s_upper_rebound:
-    number: 45
+    number: A2-B1-4
   s_top_popper:
-    number: 46
+    number: A2-B1-3
   s_bottom_popper:
-    number: 47
+    number: A1-B0-3
   s_lower_rebound:
-    number: 48
+    number: A1-B1-0
   s_ring_ramp:
-    number: 49
+    number: A2-B1-1
   s_captive_ball_standup:
-    number: 50
-  s_hive_exit_subway:
-    number: 51
+    number: A1-B1-4
   s_hive_exit_pops:
-    number: 52
+    number: A3-B0-3
   s_hive_exit_eject:
-    number: 53
+    number: A3-B0-4
   s_hive_exit_left_inlane:
-    number: 54
+    number: A3-B0-5
   s_left_saucer:
-    number: 55
+    number: A1-B1-5
     tags: carousel_saucer
   s_right_loop:
-    number: 56
+    number: A2-B0-0
+  s_hive-jet:
+    number: A3-B0-1
 
 coils:
   c_flipper_left_main:

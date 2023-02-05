@@ -199,129 +199,173 @@ lights:
   rear_car_crash:
     number: 0
     type: grb
-  middle_car_crash:
+  odb_ramp_8:
     number: 1
     type: grb
-  front_car_crash:
+  odb_ramp_7:
     number: 2
     type: grb
-  rza_r:
+  odb_ramp_6:
     number: 3
     type: grb
-  rza_z:
+  odb_ramp_5:
     number: 4
     type: grb
-  rza_a:
+  odb_ramp_4:
     number: 5
     type: grb
-  between_pops:
+  odb_ramp_3:
     number: 6
     type: grb
-  odb_arrow:
+  odb_ramp_2:
     number: 7
     type: grb
-  odb_insert:
+  odb_ramp_1:
     number: 8
     type: grb
-  mk_arrow:
+  rza_r:
     number: 9
     type: grb
-  mk_insert:
+  rza_z:
     number: 10
     type: grb
-  ugod_arrow:
+  rza_a:
     number: 11
     type: grb
-  ugod_insert:
+  between_pops:
     number: 12
     type: grb
-  extra_ball:
+  odb_arrow:
     number: 13
     type: grb
-  raekwon_arrow:
+  odb_insert:
     number: 14
     type: grb
-  raekwon_insert:
+  mk_arrow:
     number: 15
     type: grb
-  mm_arrow:
+  mk_insert:
     number: 16
     type: grb
-  mm_insert:
+  raekwon_arrow:
     number: 17
     type: grb
-  deck_top:
+  cream_r:
     number: 18
     type: grb
-  deck_bottom:
+  mm_arrow:
     number: 19
     type: grb
-  gk_arrow:
+  ugod_arrow:
     number: 20
     type: grb
-  gk_insert:
+  middle_car_crash:
     number: 21
     type: grb
-  cream_c:
+  front_car_crash:
     number: 22
     type: grb
-  cream_r:
+  captive_ball:
     number: 23
     type: grb
-  cream_e:
+  deck_top:
     number: 24
     type: grb
-  cream_a:
+  mode_start:
     number: 25
     type: grb
-  cream_m:
+  deck_bottom:
     number: 26
     type: grb
-  captive_ball:
+  cream_c:
     number: 27
     type: grb
-  shaolin:
+  ugod_insert:
     number: 28
     type: grb
-  simple:
+ mm_insert:
     number: 29
     type: grb
-  nuthin: 
+  extra_ball:
     number: 30
     type: grb
-  triumph:
+  raekwon_insert:
     number: 31
     type: grb
-  gravel: 
+  cream_e:
     number: 32
     type: grb
-  protect:
+  cream_a:
     number: 33
     type: grb
-  cream_multi:
+  gk_arrow:
     number: 34
     type: grb
-  left_inlane:
+  cream_m:
     number: 35
     type: grb
-  right_inlane:
+  gza_arrow:
     number: 36
     type: grb
-  left_ball_save:
+  gk_insert:
     number: 37
     type: grb
-  right_ball_save:
+  gza_insert:
     number: 38
     type: grb
-  shoot_again:
+  right_inlane:
     number: 39
     type: grb
-  gza_arrow:
+  simple_r:
     number: 40
     type: grb
-  gza_insert:
+  simple_l:
     number: 41
     type: grb
+  triumph_r:
+    number: 42
+    type: grb
+  gravel_r: 
+    number: 43
+    type: grb
+  protect_r:
+    number: 44
+    type: grb
+  right_ball_save:
+    number: 45
+    type: grb
+  cream_multi_r:
+    number: 46
+    type: grb
+  shoot_again:
+    number: 47
+    type: grb
+  cream_multi_l:
+    number: 48
+    type: grb
+  protect_l:
+    number: 49
+    type: grb
+  left_ball_save:
+    number: 50
+    type: grb
+  gravel_l: 
+    number: 51
+    type: grb
+  triumph_l:
+    number: 52
+    type: grb
+  nuthin_r: 
+    number: 53
+    type: grb
+  nuthin_l: 
+    number: 54
+    type: grb
+  left_inlane:
+    number: 55
+    type: grb
+
+
     
 playfields:
   playfield:

@@ -204,6 +204,7 @@ sound_player:
   s_left_jet_bumper_active: scratch1
   s_right_jet_bumper_active: scratch2
   s_upper_slingshot_active: scratch3
+  s_start: playliststart
 
 playlists:
   playliststart:

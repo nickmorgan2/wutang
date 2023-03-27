@@ -84,7 +84,7 @@ counters:
     count_events: s_right_ramp_exit_hit
   gza_qualify_counter:
     starting_count: 0
-    count_complete_value: 30
+    count_complete_value: 3
     events_when_complete: disable_qualify
     enable_events: enable_qualify
     disable_events: 
@@ -92,7 +92,7 @@ counters:
     persist_state: true
     reset_on_complete: false
     restart_events: reset_qualify_modes
-    count_events: s_right_spinner_hit
+    count_events: s_right_loop_hit
   rza_qualify_counter:
     starting_count: 0
     count_complete_value: 3
@@ -119,6 +119,22 @@ counters:
 variable_player:
   mastakilla_complete:
     mastakilla_qualified: 1
+  deck_complete:
+    deck_qualified: 1
+  ugod_complete:
+    ugod_qualified: 1
+  method_complete:
+    method_qualified: 1
+  odb_complete:
+    odb_qualified: 1
+  raekwon_complete:
+    raekwon_qualified: 1
+  ghostface_complete:
+    ghostface_qualified: 1
+  gza_complete:
+    gza_qualified: 1
+  rza_complete:
+    rza_qualified: 1
 
 playlists:
   playlistdeckqual:
@@ -198,7 +214,7 @@ sound_player:
   s_top_popper_hit: playlistugodqual
   s_left_ramp_exit_hit: playlistmethodqual
   s_center_ramp_hit: playlistodbqual
-  #shot_bottom_scoop_hit: playlistmkqual
+  shot_bottom_scoop_hit: playlistmkqual
   s_side_ramp_hit: playlistraekwonqual
   rollover_complete: playlistrzaqual
   s_right_ramp_exit_hit: playlistghostfacequal

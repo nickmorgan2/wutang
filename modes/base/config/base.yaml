@@ -198,12 +198,13 @@ sound_player:
   s_standup_3_active: coin
   s_standup_4_active: coin
   s_standup_5_active: coin
-  s_left_slingshot_active: sword
-  s_right_slingshop_active: sword
-  s_right_spinner_active: spinner
+  #s_left_slingshot_active: sword
+  #s_right_slingshop_active: sword
+  #s_right_spinner_active: spinner
   s_left_jet_bumper_active: scratch1
   s_right_jet_bumper_active: scratch2
   s_upper_slingshot_active: scratch3
+  s_start: playliststart
 
 playlists:
   playliststart:

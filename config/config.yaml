@@ -53,7 +53,7 @@ switches:
   s_plunger_lane:
     number: A0-B0-7
   s_launch_button:
-    number: A4-B0-5
+    number: A4-B1-2
   s_start:
     number: A4-B0-4
     tags: start
@@ -68,7 +68,7 @@ switches:
   s_slam_tilt:
     number: A4-B0-1
   s_coin_door_closed:
-    number: A4-B0-6
+    number: A4-B0-5
   s_standup_1:
     number: A1-B0-7
   s_standup_2:
@@ -127,16 +127,16 @@ switches:
     number: A1-B0-3
   s_lower_rebound:
     number: A1-B1-0
-  s_ring_ramp:
-    number: A2-B1-1
+  s_hive_scoop:
+    number: A3-B0-0
   s_captive_ball_standup:
     number: A1-B1-4
-  s_hive_exit_pops:
-    number: A3-B0-3
-  s_hive_exit_eject:
-    number: A3-B0-4
-  s_hive_exit_left_inlane:
-    number: A3-B0-5
+  #s_hive_exit_pops:
+    #number: A3-B0-3
+  #s_hive_exit_eject:
+    #number: A3-B0-4
+  #s_hive_exit_left_inlane:
+    #number: A3-B0-5
   s_left_saucer:
     number: A1-B1-5
     tags: carousel_saucer
@@ -144,6 +144,16 @@ switches:
     number: A2-B0-0
   s_hive-jet:
     number: A3-B0-1
+  s_plumb_bob
+    number: A4-B0-0
+  s_left_flipper_button_1
+    number: A4-B0-2
+  s_left_flipper_button_2
+    number: A4-B0-3
+  s_right_flipper_button_1
+    number: A4-B1-0
+  s_right_flipper_button_2
+    number: A4-B1-1
 
 coils:
   c_flipper_left_main:
@@ -176,7 +186,7 @@ coils:
     number: A1-B0-2
   c_hive_jet:
     number: A1-B1-2
-  c-ring_magnet:
+  c_hive_popper:
     number: A1-B1-1
   c_diverter:
     number: A1-B0-7

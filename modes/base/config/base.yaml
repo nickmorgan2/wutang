@@ -204,17 +204,17 @@ sound_player:
   s_left_jet_bumper_active: scratch1
   s_right_jet_bumper_active: scratch2
   s_upper_slingshot_active: scratch3
-  s_start_active: playliststart
+  #s_start_active: playliststart
 
-playlists:
-  playliststart:
-    shuffle: true
-    repeat: false
-    sounds:
-      - start1
-      - start2
-      - start3
-      - upfromthe36
+#playlists:
+ # playliststart:
+  #  shuffle: true
+   # repeat: false
+    #sounds:
+     # - start1
+      #- start2
+      #- start3
+      #- upfromthe36
 
   
 

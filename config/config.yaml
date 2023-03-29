@@ -641,4 +641,15 @@ machine_vars:
     persist: true         # If false, the volume will reset to default
                           # each time the machine boots up
 
+sound_player:
+  s_start_active: playliststart
 
+playlists:
+  playliststart:
+    shuffle: true
+    repeat: false
+    sounds:
+      - start1
+      - start2
+      - start3
+      - upfromthe36

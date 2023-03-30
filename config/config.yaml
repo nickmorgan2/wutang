@@ -144,8 +144,6 @@ switches:
     number: A2-B0-0
   s_hive-jet:
     number: A3-B0-1
-  s_plumb_bob:
-    number: A4-B0-0
   s_left_flipper_button_1:
     number: A4-B0-2
   s_left_flipper_button_2:

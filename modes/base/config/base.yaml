@@ -105,7 +105,7 @@ variable_player:
     score: 50
   s_lower_rebound_active:
     score: 10
-  s_ring_ramp_active:
+  s_hive_scoop_active:
     score: 100
   s_left_saucer_active:
     score: 50
@@ -153,8 +153,8 @@ sequence_shots:
   side_ramp:
     switch_sequence: s_side_ramp_enter, s_side_ramp_exit
     sequence_timeout: 3s
-  ring_ramp:
-    switch_sequence: s_right_ramp_enter, s_ring_ramp
+  hive_ramp:
+    switch_sequence: s_right_ramp_enter, s_hive_scoop
     sequence_timeout: 3s
 
 sounds:

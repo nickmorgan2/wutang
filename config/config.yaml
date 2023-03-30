@@ -146,13 +146,13 @@ switches:
     number: A3-B0-1
   s_plumb_bob:
     number: A4-B0-0
-  s_left_flipper_button_1
+  s_left_flipper_button_1:
     number: A4-B0-2
-  s_left_flipper_button_2
+  s_left_flipper_button_2:
     number: A4-B0-3
-  s_right_flipper_button_1
+  s_right_flipper_button_1:
     number: A4-B1-0
-  s_right_flipper_button_2
+  s_right_flipper_button_2:
     number: A4-B1-1
 
 coils:

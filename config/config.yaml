@@ -18,6 +18,7 @@ modes:
   - rza
   - qualify
   - tilt
+  - service
 
 switches:
   s_left_flipper:

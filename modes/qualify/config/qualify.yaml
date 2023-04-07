@@ -7,7 +7,7 @@ counters:
   deck_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: deck_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -18,7 +18,7 @@ counters:
   ugod_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: ugod_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -29,7 +29,7 @@ counters:
   method_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: method_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -40,7 +40,7 @@ counters:
   odb_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: odb_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -51,7 +51,7 @@ counters:
   mastakilla_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: mastakilla_complete
+    events_when_complete: mastakilla_qualified
     enable_events: enable_qualify
     events_when_hit: mkq_hit
     disable_events: 
@@ -63,7 +63,7 @@ counters:
   raekwon_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: raekwon_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -74,7 +74,7 @@ counters:
   ghostface_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: ghostface_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -85,7 +85,7 @@ counters:
   gza_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: gza_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -96,7 +96,7 @@ counters:
   rza_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: disable_qualify
+    events_when_complete: rza_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -107,7 +107,7 @@ counters:
   cappadonna_qualify_counter:
     starting_count: 0
     count_complete_value: 20
-    events_when_complete: disable_qualify
+    events_when_complete: cappadonna_qualified
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -219,4 +219,61 @@ sound_player:
   rollover_complete: playlistrzaqual
   s_right_ramp_exit_hit: playlistghostfacequal
   gza_qualify_counter_complete: gzaqual3
-
+  
+slides:
+  deck_qualified_slide:
+    - type: image
+      image: deckqualified
+  ghostface_qualified_slide:
+    - type: image
+      image: ghostfacequalified
+  gza_qualified_slide:
+    - type: image
+      image: gzaqualified
+  mastakilla_qualified_slide:
+    - type: image
+      image: mastakillaqualified
+  methodman_qualified_slide:
+    - type: image
+      image: methodmanqualified
+  odb_qualified_slide:
+    - type: image
+      image: odbqualified
+  raekwon_qualified_slide:
+    - type: image
+      image: raekwonqualified
+  rza_qualified_slide:
+    - type: image
+      image: rzaqualified
+  ugod_qualified_slide:
+    - type: image
+      image: ugodqualified
+      
+slideplayer:
+  deck_qualified:
+    deck_qualified_slide:
+      expire: 2s
+  ghostface_qualified:
+    ghostface_qualified_slide:
+      expire: 2s
+  gza_qualified:
+    gza_qualified_slide:
+      expire: 2s
+  mastakilla_qualified:
+    mastakilla_qualified_slide:
+      expire: 2s
+  methodman_qualified:
+    methodman_qualified_slide:
+      expire: 2s
+  odb_qualified:
+    odb_qualified_slide:
+      expire: 2s
+  raekwon_qualified:
+    raekwon_qualified_slide:
+      expire: 2s
+  rza_qualified:
+    rza_qualified_slide:
+      expire: 2s
+  ugod_qualified:
+    ugod_qualified_slide:
+      expire: 2s

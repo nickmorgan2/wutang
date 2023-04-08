@@ -249,7 +249,7 @@ slides:
     - type: image
       image: ugodqualified
       
-slideplayer:
+slide_player:
   deck_qualified:
     deck_qualified_slide:
       expire: 2s

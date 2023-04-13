@@ -1,7 +1,8 @@
 #config_version=5 
 
 hardware:
-  platform: smart_virtual
+  platform: p3_roc
+  #platform: smart_virtual
 
 modes:
   - base

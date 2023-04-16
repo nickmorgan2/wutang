@@ -1,8 +1,15 @@
 #config_version=5
 mode:
   start_events: method_man_selected 
-  stop_events: method_man_completed
+  stop_events: method_man_completed, methodman_timer_complete
   priority: 1000
+
+#Method Man
+#  - to qualify- shoot left ramp 3x, shoot saucer and select
+#  - song: Method Man (4:31)
+#  - shoot 10 left or right ramps.  each ramp is a 20 sec countdown from 50k to 5k
+#  - shoot right ramp with open diverter to complete
+#  - completion bonus 200k
 
 #shot_groups:
 #  ramps:
@@ -27,3 +34,11 @@ mode:
 #  methodman:
 #    volume: 0.5
 #    priority: 100 
+
+#timers:
+  #methodman_timer:
+    #start_value: 271
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true

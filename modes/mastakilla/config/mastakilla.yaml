@@ -9,10 +9,11 @@
 #  - shoot right ramp with open diverter to complete
 #  - completion bonus 10kxremaining seconds
 
+# todo add diverter rule and completion bonus
 
 mode: 
   start_events: carousel_mastakilla_selected
-  stop_events: mastakilla_completed, mastakilla_timer_complete
+  stop_events: mastakilla_completed #, mastakilla_timer_complete
   priority: 1000
 
 

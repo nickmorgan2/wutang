@@ -1,8 +1,17 @@
 #config_version=5
 mode: 
   start_events: u_god_selected
-  stop_events: u_god_completed
+  stop_events: u_god_completed #, ugod_timer_complete
   priority: 1000
+  
+#U-God
+#  - to qualify- left orbit to upper scoop 3x, shoot saucer and select
+#  - song: Bizarre (3:17)
+#  - shoot 7 left orbit shots in time
+#  - 1st orbit to scoop 20k
+#  - pop bumpers increase upper scoop by 5k
+#  - shoot right ramp with open diverter to complete
+#  - completion bonus 5k x seconds remaining
 
 #shots: left_orbit
 
@@ -25,3 +34,11 @@ mode:
 #  bizarre:
 #    volume: 0.5
 #    priority: 100 
+
+#timers:
+  #ugod_timer:
+    #start_value: 197
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true

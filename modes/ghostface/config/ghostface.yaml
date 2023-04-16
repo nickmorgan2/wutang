@@ -10,6 +10,8 @@ mode:
   # diverter open, each R ramp a countdown from 50k to 5k in 30s
   # make 5 right ramps, final ramp completes
   # completion bonus 5x remaining s
+  
+  #todo- add diverter rule and completion bonus
 
 #counters:
 #  right_ramp_counter:

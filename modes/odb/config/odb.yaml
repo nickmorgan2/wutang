@@ -12,7 +12,7 @@
 
 mode: 
   start_events: odb_selected
-  stop_events: odb_completed, odb_timer_complete
+  stop_events: odb_completed #, odb_timer_complete
   priority: 1000
 
 #accruals:

@@ -26,6 +26,7 @@ mode:
 #  cherchezlaghost:
 #    volume: 0.5
 #    priority: 100 
+
 #timers:
   #ghostface_timer:
     #start_value: 145

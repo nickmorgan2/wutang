@@ -13,6 +13,8 @@ mode:
 #  - shoot right ramp with open diverter to complete
 #  - completion bonus 10k x remaining seconds
 
+#todo add diverter rule and completion bonus
+
 
 #state_machines:
 #  raekwon:

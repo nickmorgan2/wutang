@@ -1,7 +1,15 @@
 #config_version=5
+
+#Inspecta Deck
+#  - to qualify- hit car crash lane 3x, shoot saucer and select
+#  - Song: The Movememnt (3:40)
+#  - Shoot sequence of shots- R Ramp, Car, Center Ramp, car, left ramp, car, side ramp, car
+#  - completion bonus 5000 x seconds remaining
+
+
 mode: 
   start_events: deck_selected 
-  stop_events: deck_completed
+  stop_events: deck_completed, deck_timer_completed
   priority: 1000
 
 #shot_groups:
@@ -98,6 +106,14 @@ mode:
 #    score: 100000
 #  deck_completed:
 #    score: 200000
+
+#timers:
+  #deck_timer:
+    #start_value: 220
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true
 
 #sounds:
 #  movement:

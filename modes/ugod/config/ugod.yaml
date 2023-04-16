@@ -13,6 +13,8 @@ mode:
 #  - shoot right ramp with open diverter to complete
 #  - completion bonus 5k x seconds remaining
 
+# add score increases, diverter rules and completion bonus
+
 #shots: left_orbit
 
 #counters:

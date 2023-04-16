@@ -1,7 +1,7 @@
 #config_version=5
 mode: 
   start_events: ghostface_selected
-  stop_events: ghostface_completed, ghostface_timer_complete
+  stop_events: ghostface_completed #, ghostface_timer_complete
   priority: 1000
   
   #Ghostface Killah

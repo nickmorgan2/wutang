@@ -1,8 +1,14 @@
 #config_version=5
 mode: 
   start_events: rza_selected
-  stop_events: rza_completed
+  stop_events: rza_completed #, rza_timer_complete
   priority: 1000
+  
+#  RZA
+#  - to qualify- complete upper rollovers 3x, shoot saucer and select
+#  - song: holocaust/silkworm (5:03)
+#  - complete all 5 rollovers 3x, completions award 50k + 2k/pop
+
 
 #accruals:
 #  rza_accrual:
@@ -33,3 +39,11 @@ mode:
 #  holocaust:
 #    volume: 0.5
 #    priority: 100 
+
+#timers:
+  #rza_timer:
+    #start_value: 303
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true

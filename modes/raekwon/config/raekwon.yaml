@@ -1,8 +1,19 @@
 #config_version=5
 mode: 
   start_events: raekwon_selected
-  stop_events: raekwon_completed
+  stop_events: raekwon_completed #, raekwon_timer_complete
   priority: 1000
+  
+#Raekwon
+#  - to qualify- shoot side ramp 3x, shoot saucer and select
+#  - Song: Ice Cream (4:13)
+#  - r orbit to side ramp 30k
+#  - center ramp to side ramp 30k
+#  - complete 3x, value increase 2x each time
+#  - shoot right ramp with open diverter to complete
+#  - completion bonus 10k x remaining seconds
+
+#todo add diverter rule and completion bonus
 
 
 #state_machines:
@@ -108,33 +119,41 @@ mode:
 #        source: side_ramp_6
 #        target: raekwon_completed
 
-variable_player:
-  step1:
-    score: 10000
-  step2:
-    score: 15000
-  step3:
-    score: 20000
-  step4:
-    score: 25000
-  step5: 
-    score: 35000
-  step6:
-    score: 50000
-  step7:
-    score: 100000
-  step8:
-    score: 125000
-  step9:
-    score: 150000
-  step10:
-    score: 175000
-  step11:
-    score: 200000
-  raekwon_completed:
-    score: 200000
+#variable_player:
+#  step1:
+#    score: 10000
+#  step2:
+#    score: 15000
+#  step3:
+#    score: 20000
+#  step4:
+#    score: 25000
+#  step5: 
+#    score: 35000
+#  step6:
+#    score: 50000
+#  step7:
+#    score: 100000
+#  step8:
+#    score: 125000
+#  step9:
+#    score: 150000
+#  step10:
+#    score: 175000
+#  step11:
+#    score: 200000
+#  raekwon_completed:
+#    score: 200000
 
-sounds:
+#sounds:
 #  icecream:
 #    volume: 0.5
 #    priority: 100 
+
+#timers:
+  #raekwon_timer:
+    #start_value: 253
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true

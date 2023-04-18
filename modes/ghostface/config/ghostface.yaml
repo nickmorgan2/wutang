@@ -1,8 +1,17 @@
 #config_version=5
 mode: 
   start_events: ghostface_selected
-  stop_events: ghostface_completed
+  stop_events: ghostface_completed #, ghostface_timer_complete
   priority: 1000
+  
+  #Ghostface Killah
+  # qualify- right ramp 3x to qualify, shoot saucer and select
+  # Song: Cherchez La Ghost (2:25)
+  # diverter open, each R ramp a countdown from 50k to 5k in 30s
+  # make 5 right ramps, final ramp completes
+  # completion bonus 5x remaining s
+  
+  #todo- add diverter rule and completion bonus
 
 #counters:
 #  right_ramp_counter:
@@ -19,3 +28,11 @@ mode:
 #  cherchezlaghost:
 #    volume: 0.5
 #    priority: 100 
+
+#timers:
+  #ghostface_timer:
+    #start_value: 145
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true

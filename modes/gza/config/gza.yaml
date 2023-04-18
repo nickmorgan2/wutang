@@ -1,7 +1,18 @@
 #config_version=5
+
+#GZA
+#  - to qualify- right orbit 3x, shoot saucer and select
+#  - song: liquid swords (2:59)
+#  - alternate ramps and orbits
+#  - center ramp 1k/spin, r ramp 3k, l ramp 6k, s ramp 9k
+#  - each orbit shot relights all ramps
+#  - 5 lit ramps plus final shot to right ramp completes
+
+#todo add diverter rule and completion bonus
+
 mode: 
   start_events: gza_selected
-  stop_events: gza_completed
+  stop_events: gza_completed #, gza_timer_completed
   priority: 1000
 
 #shot_groups:
@@ -76,6 +87,14 @@ mode:
 #    score: 35000
 #  gza_completed:
 #    score: 200000
+
+#timers:
+  #gza_timer:
+    #start_value: 179
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true
 
 #sounds:
 #  liquidswords:

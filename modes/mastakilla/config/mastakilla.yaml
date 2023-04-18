@@ -1,8 +1,144 @@
 #config_version=5
+
+#Masta Killa
+#  - to qualify- center scoop 3x, shoot saucer and select
+#  - song: Old Man (2:26)
+#  - shoot scoop 10k
+#  - shoot captives: 50k for upper car target, 35k for lower captive ball, 25k for car
+#  - repeat 5x, values increase 1.5x each time
+#  - shoot right ramp with open diverter to complete
+#  - completion bonus 10kxremaining seconds
+
+# todo add diverter rule and completion bonus
+
 mode: 
   start_events: carousel_mastakilla_selected
-  stop_events: mastakilla_completed
+  stop_events: mastakilla_completed #, mastakilla_timer_complete
   priority: 1000
 
 
+#shot_groups:
+#  captives:
+#    shots: shot_car_crash, shot_captive_ball
 
+#state_machines:
+#  masta_killa:
+#    persist_state:
+#    states:  
+#      lower_scoop_1:
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
+#      captives_1:
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
+#      lower_scoop_2:
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
+#      captives_2:
+#        label: Captives Lit
+#        show_when_active:
+#         show_tokens:
+#           msg: Shoot Car or Captive Ball
+#      lower_scoop_3:
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
+#      captives_3:
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
+#      lower_scoop_4:
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
+#      captives_4:
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
+#      lower_scoop_5:
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
+#      captives_5:
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
+#      masta_killa_completed:
+#    transitions:
+#      - events: step1
+#        source: lower_scoop_1
+#        target: captives_1
+#      - events: step2
+#        source: captives_1
+#        target: lower_scoop_2
+#      - events: step3
+#        source: lower_scoop_2
+#        target: captives_2
+#      - events: step4
+#        source: captives_2
+#        target: lower_scoop_3
+#      - events: step4
+#        source: lower_scoop_3
+#        target: captives_3
+#      - events: step5
+#        source: captives_3
+#        target: lower_scoop_4
+#      - events: step6
+#        source: lower_scoop_4
+#        target: captives_4
+#      - events: step7
+#        source: captives_4
+#        target: lower_scoop_5
+#      - events: step8
+#        source: lower_scoop_5
+#        target: captives_5
+#      - events: step9
+#        source: captives_5
+#        target: masta_killa_completed
+
+#variable_player:
+#  step1:
+#    score: 10000
+#  step2:
+#    score: 15000
+#  step3:
+#    score: 20000
+#  step4:
+#    score: 25000
+#  step5: 
+#    score: 35000
+#  step6:
+#    score: 50000
+#  step7:
+#    score: 100000
+#  step8:
+#    score: 125000
+#  step9:
+#    score: 150000
+#  masta_killa_completed:
+#    score: 200000
+
+#sounds:
+#  oldman:
+#    volume: 0.5
+#    priority: 100 
+
+#timers:
+  #mastakilla_timer:
+    #start_value: 206
+    #end_value: 0
+    #direction: down
+    #tick_interval: 1s
+    #start_running: true

@@ -212,9 +212,9 @@ lights:
   rear_car_crash:
     number: 0
     type: grb
-  odb_ramp_8:
-    number: 1
-    type: grb
+  #odb_ramp_8:
+  #  number: 1
+  #  type: grb
   odb_ramp_7:
     number: 2
     type: grb

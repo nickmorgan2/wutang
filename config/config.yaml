@@ -3,6 +3,9 @@
 hardware:
   platform: p3_roc
   #platform: smart_virtual
+  
+p_roc:
+  driverboards: pdb
 
 modes:
   - base

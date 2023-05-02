@@ -7,7 +7,7 @@ counters:
   deck_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: deck_qualified
+    events_when_complete: mode_deck_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -18,7 +18,7 @@ counters:
   ugod_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: ugod_qualified
+    events_when_complete: mode_ugod_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -29,7 +29,7 @@ counters:
   method_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: method_qualified
+    events_when_complete: mode_methodman_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -40,7 +40,7 @@ counters:
   odb_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: odb_qualified
+    events_when_complete: mode_odb_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -51,7 +51,7 @@ counters:
   mastakilla_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: mastakilla_qualified
+    events_when_complete: mode_mastakilla_start
     enable_events: enable_qualify
     events_when_hit: mkq_hit
     disable_events: 
@@ -63,7 +63,7 @@ counters:
   raekwon_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: raekwon_qualified
+    events_when_complete: mode_raekwon_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -74,7 +74,7 @@ counters:
   ghostface_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: ghostface_qualified
+    events_when_complete: mode_ghostface_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -85,7 +85,7 @@ counters:
   gza_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: gza_qualified
+    events_when_complete: mode_gza_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true
@@ -96,7 +96,7 @@ counters:
   rza_qualify_counter:
     starting_count: 0
     count_complete_value: 3
-    events_when_complete: rza_qualified
+    events_when_complete: mode_rza_start
     enable_events: enable_qualify
     disable_events: 
     start_enabled: true

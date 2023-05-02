@@ -1,6 +1,6 @@
 #config_version=5
 mode: 
-  start_events: ghostface_selected
+  start_events: mode_ghostface_start
   stop_events: ghostface_completed #, ghostface_timer_complete
   priority: 1000
   

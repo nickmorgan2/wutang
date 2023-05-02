@@ -1,6 +1,6 @@
 #config_version=5
 mode: 
-  start_events: raekwon_selected
+  start_events: mode_raekwon_start
   stop_events: raekwon_completed #, raekwon_timer_complete
   priority: 1000
   

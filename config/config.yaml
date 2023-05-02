@@ -10,7 +10,7 @@ p_roc:
 modes:
   - base
   - skill
-  - carousel
+#  - carousel
   - mastakilla
   - deck
   - ugod
@@ -160,223 +160,223 @@ switches:
 
 coils:
   c_flipper_left_main:
-    number: A0-B0-4
+    number: A1-B0-4
     default_pulse_ms: 20
   c_flipper_left_hold:
-    number: A0-B0-5
+    number: A1-B0-5
     allow_enable: true
   c_flipper_right_main:
-    number: A0-B0-2
+    number: A1-B0-2
     default_pulse_ms: 20
   c_flipper_right_hold:
-    number: A0-B0-3
+    number: A1-B0-3
     allow_enable: true
   c_flipper_upper_main:
-    number: A1-B0-0
-    default_pulse_ms: 20
-  c_flipper_upper_hold:
-    number: A1-B0-1
-    allow_enable: true
-  c_trough_eject:
     number: A0-B0-0
     default_pulse_ms: 20
-  c_plunger:
+  c_flipper_upper_hold:
     number: A0-B0-1
+    allow_enable: true
+  c_trough_eject:
+    number: A1-B0-0
+    default_pulse_ms: 20
+  c_plunger:
+    number: A1-B0-1
     default_pulse_ms: 20
   c_top_popper:
-    number: A1-B1-0
-  c_bottom_popper:
-    number: A1-B0-2
-  c_hive_jet:
-    number: A1-B1-2
-  c_hive_popper:
-    number: A1-B1-1
-  c_diverter:
-    number: A1-B0-7
-  c_left_slingshot:
-    number: A0-B0-7
-  c_right_slingshot:
-    number: A0-B0-6
-  c_upper_slingshot:
-    number: A1-B0-4
-  c_left_jet_bumper:
-    number: A1-B0-6
-  c_right_jet_bumper:
-    number: A1-B0-5
-  c_left_saucer:
     number: A0-B1-0
+  c_bottom_popper:
+    number: A0-B0-2
+  c_hive_jet:
+    number: A0-B1-2
+  c_hive_popper:
+    number: A0-B1-1
+  c_diverter:
+    number: A0-B0-7
+  c_left_slingshot:
+    number: A1-B0-7
+  c_right_slingshot:
+    number: A1-B0-6
+  c_upper_slingshot:
+    number: A0-B0-4
+  c_left_jet_bumper:
+    number: A0-B0-6
+  c_right_jet_bumper:
+    number: A0-B0-5
+  c_left_saucer:
+    number: A1-B1-0
   c-knocker:
-    number: A1-B1-4
+    number: A0-B1-4
     
-lights:
-  rear_car_crash:
-    number: 0
-    type: grb
+#lights:
+#  rear_car_crash:
+#    number: 0
+#    type: grb
   #odb_ramp_8:
   #  number: 1
   #  type: grb
-  odb_ramp_7:
-    number: 2
-    type: grb
-  odb_ramp_6:
-    number: 3
-    type: grb
-  odb_ramp_5:
-    number: 4
-    type: grb
-  odb_ramp_4:
-    number: 5
-    type: grb
-  odb_ramp_3:
-    number: 6
-    type: grb
-  odb_ramp_2:
-    number: 7
-    type: grb
-  odb_ramp_1:
-    number: 8
-    type: grb
-  rza_r:
-    number: 9
-    type: grb
-  rza_z:
-    number: 10
-    type: grb
-  rza_a:
-    number: 11
-    type: grb
-  between_pops:
-    number: 12
-    type: grb
-  odb_arrow:
-    number: 13
-    type: grb
-  odb_insert:
-    number: 14
-    type: grb
-  mk_arrow:
-    number: 15
-    type: grb
-  mk_insert:
-    number: 16
-    type: grb
-  raekwon_arrow:
-    number: 17
-    type: grb
-  cream_r:
-    number: 18
-    type: grb
-  mm_arrow:
-    number: 19
-    type: grb
-  ugod_arrow:
-    number: 20
-    type: grb
-  middle_car_crash:
-    number: 21
-    type: grb
-  front_car_crash:
-    number: 22
-    type: grb
-  captive_ball:
-    number: 23
-    type: grb
-  deck_top:
-    number: 24
-    type: grb
-  mode_start:
-    number: 25
-    type: grb
-  deck_bottom:
-    number: 26
-    type: grb
-  cream_c:
-    number: 27
-    type: grb
-  ugod_insert:
-    number: 28
-    type: grb
-  mm_insert:
-    number: 29
-    type: grb
-  extra_ball:
-    number: 30
-    type: grb
-  raekwon_insert:
-    number: 31
-    type: grb
-  cream_e:
-    number: 32
-    type: grb
-  cream_a:
-    number: 33
-    type: grb
-  gk_arrow:
-    number: 34
-    type: grb
-  cream_m:
-    number: 35
-    type: grb
-  gza_arrow:
-    number: 36
-    type: grb
-  gk_insert:
-    number: 37
-    type: grb
-  gza_insert:
-    number: 38
-    type: grb
-  right_inlane:
-    number: 39
-    type: grb
-  simple_r:
-    number: 40
-    type: grb
-  simple_l:
-    number: 41
-    type: grb
-  triumph_r:
-    number: 42
-    type: grb
-  gravel_r: 
-    number: 43
-    type: grb
-  protect_r:
-    number: 44
-    type: grb
-  right_ball_save:
-    number: 45
-    type: grb
-  cream_multi_r:
-    number: 46
-    type: grb
-  shoot_again:
-    number: 47
-    type: grb
-  cream_multi_l:
-    number: 48
-    type: grb
-  protect_l:
-    number: 49
-    type: grb
-  left_ball_save:
-    number: 50
-    type: grb
-  gravel_l: 
-    number: 51
-    type: grb
-  triumph_l:
-    number: 52
-    type: grb
-  nuthin_r: 
-    number: 53
-    type: grb
-  nuthin_l: 
-    number: 54
-    type: grb
-  left_inlane:
-    number: 55
-    type: grb
+#  odb_ramp_7:
+#    number: 2
+#    type: grb
+#  odb_ramp_6:
+#    number: 3
+#    type: grb
+#  odb_ramp_5:
+#    number: 4
+#    type: grb
+#  odb_ramp_4:
+#    number: 5
+#    type: grb
+#  odb_ramp_3:
+#    number: 6
+#    type: grb
+#  odb_ramp_2:
+#    number: 7
+#    type: grb
+#  odb_ramp_1:
+#    number: 8
+#    type: grb
+#  rza_r:
+#    number: 9
+#    type: grb
+#  rza_z:
+#    number: 10
+#    type: grb
+#  rza_a:
+#    number: 11
+#    type: grb
+#  between_pops:
+#    number: 12
+#    type: grb
+#  odb_arrow:
+#    number: 13
+#    type: grb
+#  odb_insert:
+#    number: 14
+#    type: grb
+#  mk_arrow:
+#    number: 15
+#    type: grb
+#  mk_insert:
+#    number: 16
+#    type: grb
+#  raekwon_arrow:
+#    number: 17
+#    type: grb
+#  cream_r:
+#    number: 18
+#    type: grb
+#  mm_arrow:
+#    number: 19
+#    type: grb
+#  ugod_arrow:
+#    number: 20
+#    type: grb
+#  middle_car_crash:
+#    number: 21
+#    type: grb
+#  front_car_crash:
+#    number: 22
+#    type: grb
+#  captive_ball:
+#    number: 23
+#    type: grb
+#  deck_top:
+#    number: 24
+#    type: grb
+#  mode_start:
+#    number: 25
+#    type: grb
+#  deck_bottom:
+#    number: 26
+#    type: grb
+#  cream_c:
+#    number: 27
+#    type: grb
+#  ugod_insert:
+#    number: 28
+#    type: grb
+#  mm_insert:
+#    number: 29
+#    type: grb
+#  extra_ball:
+#    number: 30
+#    type: grb
+#  raekwon_insert:
+#    number: 31
+#    type: grb
+#  cream_e:
+#    number: 32
+#    type: grb
+#  cream_a:
+#    number: 33
+#    type: grb
+#  gk_arrow:
+#    number: 34
+#    type: grb
+#  cream_m:
+#    number: 35
+#    type: grb
+#  gza_arrow:
+#    number: 36
+#    type: grb
+#  gk_insert:
+#    number: 37
+#    type: grb
+#  gza_insert:
+#    number: 38
+#    type: grb
+#  right_inlane:
+#    number: 39
+#    type: grb
+#  simple_r:
+#    number: 40
+#    type: grb
+#  simple_l:
+#    number: 41
+#    type: grb
+#  triumph_r:
+#    number: 42
+#    type: grb
+#  gravel_r: 
+#    number: 43
+#    type: grb
+#  protect_r:
+#    number: 44
+#    type: grb
+#  right_ball_save:
+#    number: 45
+#    type: grb
+#  cream_multi_r:
+#    number: 46
+#    type: grb
+#  shoot_again:
+#    number: 47
+#    type: grb
+#  cream_multi_l:
+#    number: 48
+#    type: grb
+#  protect_l:
+#    number: 49
+#    type: grb
+#  left_ball_save:
+#    number: 50
+#    type: grb
+#  gravel_l: 
+#    number: 51
+#    type: grb
+#  triumph_l:
+#    number: 52
+#    type: grb
+#  nuthin_r: 
+#    number: 53
+#    type: grb
+#  nuthin_l: 
+#    number: 54
+#    type: grb
+#  left_inlane:
+#    number: 55
+#    type: grb
 
 
     

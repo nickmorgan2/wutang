@@ -14,11 +14,11 @@ shots:
   skill_mk:
     switch: s_bottom_popper
     profile: skill_shot_profile
-    events_when_complete: mode_mastakilla_start
+#    events_when_complete: mode_mastakilla_start
   skill_raekwon:
     switch: s_side_ramp_exit
     profile: skill_shot_profile
-    events_when_complete: mode_raekwon_start
+#    events_when_complete: mode_raekwon_start
 shot_profiles:
   skill_shot_profile:
     states:

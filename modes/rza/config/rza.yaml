@@ -1,4 +1,5 @@
-#config_version=5
+config_version=5
+
 mode: 
   start_events: mode_rza_start
   stop_events: rza_completed #, rza_timer_complete

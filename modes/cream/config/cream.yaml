@@ -49,5 +49,5 @@ player_vars:
 slides:
   cream_video:
     - type: video
-      video: cream_edit2
+      video: creamedit2
       end_behavior: loop

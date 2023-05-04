@@ -12,7 +12,7 @@
 # todo add diverter rule and completion bonus
 
 mode: 
-  start_events: carousel_mastakilla_selected
+  start_events: mode_mastakilla_start
   stop_events: mastakilla_completed #, mastakilla_timer_complete
   priority: 1000
 

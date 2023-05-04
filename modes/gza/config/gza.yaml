@@ -11,7 +11,7 @@
 #todo add diverter rule and completion bonus
 
 mode: 
-  start_events: gza_selected
+  start_events: mode_gza_start
   stop_events: gza_completed #, gza_timer_completed
   priority: 1000
 

@@ -1,4 +1,4 @@
-#config_version=5
+_#config_version=5
 
 #Inspecta Deck
 #  - to qualify- hit car crash lane 3x, shoot saucer and select
@@ -8,7 +8,7 @@
 
 
 mode: 
-  start_events: deck_selected 
+  start_events: mode_deck_start
   stop_events: deck_completed #, deck_timer_completed
   priority: 1000
 

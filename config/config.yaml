@@ -7,6 +7,10 @@ hardware:
 p_roc:
   driverboards: pdb
 
+game:
+  balls_per_game: 3
+  max_players: 4
+
 modes:
   - base
   - skill

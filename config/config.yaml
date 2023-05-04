@@ -30,50 +30,50 @@ modes:
 
 switches:
   s_left_flipper:
-    number: A0-B1-2
+    number: A0-B0-2
     tags: left_flipper
   s_right_flipper:
-    number: A0-B1-3
+    number: A0-B0-3
     tags: right_flipper
   s_upper_flipper:
     number: A1-B0-5
     tags: upper_flipper
   s_trough1:
-    number: A0-B0-0
+    number: A0-B1-0
     type: NC
   s_trough2:
-    number: A0-B0-1
+    number: A0-B1-1
     type: NC
   s_trough3:
-    number: A0-B0-2
+    number: A0-B1-2
     type: NC
   s_trough4:
-    number: A0-B0-3
+    number: A0-B1-3
     type: NC
   s_trough5:
-    number: A0-B0-4
+    number: A0-B1-4
     type: NC
   s_trough6:
-    number: A0-B0-5
+    number: A0-B1-5
     type: NC
   s_trough_jam:
-    number: A0-B0-6
+    number: A0-B1-6
     type: NC
   s_plunger_lane:
-    number: A0-B0-7
+    number: A0-B1-7
   s_launch_button:
     number: A4-B1-2
   s_start:
     number: A4-B0-4
     tags: start
   s_right_inlane:
-    number: A0-B1-4
+    number: A0-B0-4
   s_plumb_bob:
     number: A4-B0-0
   s_left_outlane:
-    number: A0-B1-0
+    number: A0-B0-0
   s_left_inlane:
-    number: A0-B1-1
+    number: A0-B0-1
   s_slam_tilt:
     number: A4-B0-1
   s_coin_door_closed:
@@ -89,9 +89,9 @@ switches:
   s_standup_5:
     number: A1-B0-1
   s_left_slingshot:
-    number: A0-B1-6
+    number: A0-B0-6
   s_right_slingshot:
-    number: A0-B1-7
+    number: A0-B0-7
   s_upper_slingshot:
     number: A2-B0-6
   s_left_jet_bumper:
@@ -418,6 +418,7 @@ displays:
 #      - type: rectangle
 #        width: 240
 #        height: 60
+
 player_vars:
   mastakilla_qualified:
     initial_value: 0
@@ -602,6 +603,9 @@ autofire_coils:
   right_jet:
     coil: c_right_jet_bumper
     switch: s_right_jet_bumper 
+  hive_jet:
+    coil: c_hive_jet
+    switch: s_hive_jet 
     
 diverters:
   ramp_diverter:

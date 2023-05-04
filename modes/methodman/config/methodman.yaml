@@ -1,4 +1,5 @@
-#config_version=5
+config_version=5
+
 mode:
   start_events: mode_methodman_start
   stop_events: method_man_completed #, methodman_timer_complete

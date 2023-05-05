@@ -34,35 +34,35 @@ state_machines:
     persist_state: true
     states:  
       accrual_1:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot each ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
       center_ramp_1:
-        label:
-        show_when_active:
-          show_tokens: 
-            msg: Shoot Center Jump
+#        label:
+#        show_when_active:
+#          show_tokens: 
+#            msg: Shoot Center Jump
       accrual_2:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot each ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
       center_ramp_2:
-        label:
-        show_when_active:
-          show_tokens:
-           msg: Shoot Center Jump
+#        label:
+#        show_when_active:
+#          show_tokens:
+#           msg: Shoot Center Jump
       accrual_3:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot each ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
       center_ramp_3:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Center Jump
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Center Jump
       odb_completed:
     transitions:
       - events: step1

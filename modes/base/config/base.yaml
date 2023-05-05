@@ -248,5 +248,14 @@ widgets:
   shoot_orbits:
     - type: text
       text: Shoot Orbits
+  shoot_lower_scoop:
+    - type: text
+      text: Shoot Masta Killa Scoop
+  shoot_captives:
+    - type: text
+      text: Shoot Car or Captive Ball
+  shoot_left_right_ramp:
+    - type: text
+      text: Shoot Left and Right Ramp
 
 

@@ -1,4 +1,4 @@
-#config_version=5
+config_version=5
 
 #GZA
 #  - to qualify- right orbit 3x, shoot saucer and select
@@ -15,88 +15,94 @@ mode:
   stop_events: gza_completed #, gza_timer_completed
   priority: 1000
 
-#shot_groups:
-#  orbits:
-#    shots: shot_right_orbit, shot_left_orbit
+shot_groups:
+  orbits:
+    shots: shot_right_orbit, shot_left_orbit
 
-#state_machines:
-#  gza:
-#    persist_state: true 
-#    states:  
-#      orbits_1:
-#         label: 
-#          show_when_active:
-#            show_tokens:
-#              msg: Shoot Orbits
-#      center_ramp_1:
-#        label:
-#          show_when_active:
-#            show_tokens:
-#              msg: Shoot Center Jump
-#      orbits_2:
-#       label:
-#          show_when_active:
-#            show_tokens:
-#              msg: Shoot Orbits
-#      center_ramp_2:
-#        label:
-#          show_when_active:
-#            show_tokens:
-#              msg: Shoot Center Jump
-#      orbits_3:
-#       label:
-#          show_when_active:
-#            show_tokens:
-#              msg: Shoot Orbits
-#      center_ramp_3:
-#        label:
-#          show_when_active:
-#            show_tokens:
-#              msg: Shoot Center Jump
-#      gza_completed:
-#    transitions:
-#      - events: step1
-#        source: orbits_1
-#        target: center_ramp_1
-#      - events: step2
-#        source: center_ramp_1
-#        target: orbits_2
-#      - events: step3
-#        source: orbits_2
-#        target: center_ramp_2
-#      - events: step4
-#        source: center_ramp_2
-#        target: orbits_3
-#      - events: step4
-#        source: orbits_3
-#        target: center_ramp_3
-#      - events: step5
-#        source: center_ramp_3
-#        target: gza_completed
+state_machines:
+  gza:
+    persist_state: true 
+    states:  
+      orbits_1:
+         label: 
+          show_when_active:
+            show_tokens:
+              msg: Shoot Orbits
+      center_ramp_1:
+        label:
+          show_when_active:
+            show_tokens:
+              msg: Shoot Center Jump
+      orbits_2:
+       label:
+          show_when_active:
+            show_tokens:
+              msg: Shoot Orbits
+      center_ramp_2:
+        label:
+          show_when_active:
+            show_tokens:
+              msg: Shoot Center Jump
+      orbits_3:
+       label:
+          show_when_active:
+            show_tokens:
+              msg: Shoot Orbits
+      center_ramp_3:
+        label:
+          show_when_active:
+            show_tokens:
+              msg: Shoot Center Jump
+      gza_completed:
+    transitions:
+      - events: step1
+        source: orbits_1
+        target: center_ramp_1
+      - events: step2
+        source: center_ramp_1
+        target: orbits_2
+      - events: step3
+        source: orbits_2
+        target: center_ramp_2
+      - events: step4
+        source: center_ramp_2
+        target: orbits_3
+      - events: step4
+        source: orbits_3
+        target: center_ramp_3
+      - events: step5
+        source: center_ramp_3
+        target: gza_completed
 
-#variable_player:
-#  step1:
-#    score: 10000
-#  step2:
-#    score: 15000
-#  step3:
-#    score: 20000
-#  step4:
-#    score: 25000
-#  step5: 
-#    score: 35000
-#  gza_completed:
-#    score: 200000
+variable_player:
+  step1:
+    score: 10000
+  step2:
+    score: 15000
+  step3:
+    score: 20000
+  step4:
+    score: 25000
+  step5: 
+    score: 35000
+  gza_completed:
+    score: 200000
 
-#timers:
-  #gza_timer:
-    #start_value: 179
-    #end_value: 0
-    #direction: down
-    #tick_interval: 1s
-    #start_running: true
+timers:
+  gza_timer:
+    start_value: 179
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: true
 
-#sounds:
-#  liquidswords:
-#    volume: 0.5
-#    priority: 100 
+sounds:
+  liquidswords:
+    volume: 0.5
+    priority: 100 
+
+slides:
+  gza_video:
+    - type: video
+      video: gzaedit2
+      end_behavior: loop

@@ -1,4 +1,5 @@
-#config_version=5
+config_version=5
+
 mode:
   start_events: mode_methodman_start
   stop_events: method_man_completed #, methodman_timer_complete
@@ -13,34 +14,40 @@ mode:
 
 # todo add diverter rule and completion bonus
 
-#shot_groups:
-#  ramps:
-#    shots: shot_right_ramp, shot_left_ramp
+shot_groups:
+  ramps:
+    shots: shot_right_ramp, shot_left_ramp
 
-#counters:
-#  method_man_counter:
-#    persist_state: true
-#    count_events: ramps_hit
-#    starting_count: 10
-#    count_complete_value: 0
-#    direction: down
-#    events_when_complete: method_man_completed
+counters:
+  method_man_counter:
+    persist_state: true
+    count_events: ramps_hit
+    starting_count: 10
+    count_complete_value: 0
+    direction: down
+    events_when_complete: method_man_completed
 
-#variable_player:
-#  ramps_hit:
-#    score: 20000
-#  method_man_completed:
-#    score: 200000
+variable_player:
+  ramps_hit:
+    score: 20000
+  method_man_completed:
+    score: 200000
 
-#sounds:
-#  methodman:
-#    volume: 0.5
-#    priority: 100 
+sounds:
+  methodman:
+    volume: 0.5
+    priority: 100 
 
-#timers:
-  #methodman_timer:
-    #start_value: 271
-    #end_value: 0
-    #direction: down
-    #tick_interval: 1s
-    #start_running: true
+timers:
+  methodman_timer:
+    start_value: 271
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: true
+
+slides:
+  methodmanvideo:
+    - type: video
+      video: methodmanedit2
+      end_behavior: loop

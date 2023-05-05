@@ -1,4 +1,4 @@
-#config_version=5
+config_version=5
 
 #ODB
 #  - to qualify- shoot center jump-off ramp 3x, shoot saucer and select
@@ -15,98 +15,104 @@ mode:
   stop_events: odb_completed #, odb_timer_complete
   priority: 1000
 
-#accruals:
-#  odb_accrual:
-#    events:
-#      - right_ramp_hit
-#      - Side_ramp_hit
-#      - Left_ramp_hit
-#    reset_on_complete: false     
-#event_player:
-#  test_event{device.accruals.test_accrual.value[0]}: right_ramp_was_hit
-#  test_event{device.accruals.test_accrual.value[1]}: side_ramp_was_hit
-#  test_event{device.accruals.test_accrual.value[2]}: left_ramp_was_hit
-#  test_event{device.accruals.test_accrual.completed}: accrual_completed
+accruals:
+  odb_accrual:
+    events:
+      - right_ramp_hit
+      - Side_ramp_hit
+      - Left_ramp_hit
+    reset_on_complete: false     
+event_player:
+  test_event{device.accruals.test_accrual.value[0]}: right_ramp_was_hit
+  test_event{device.accruals.test_accrual.value[1]}: side_ramp_was_hit
+  test_event{device.accruals.test_accrual.value[2]}: left_ramp_was_hit
+  test_event{device.accruals.test_accrual.completed}: accrual_completed
 
 
-#state_machines:
-#  odb:
-#    persist_state: true
-#    states:  
-#      accrual_1:
-#        label:
-#        show_when_active:
-#          show_tokens:
-#            msg: Shoot each ramp
-#      center_ramp_1:
-#        label:
-#        show_when_active:
-#          show_tokens: 
-#            msg: Shoot Center Jump
-#      accrual_2:
-#        label:
-#        show_when_active:
-#          show_tokens:
-#            msg: Shoot each ramp
-#      center_ramp_2:
-#        label:
-#        show_when_active:
-#          show_tokens:
-#           msg: Shoot Center Jump
-#      accrual_3:
-#        label:
-#        show_when_active:
-#          show_tokens:
-#            msg: Shoot each ramp
-#      center_ramp_3:
-#        label:
-#        show_when_active:
-#          show_tokens:
-#            msg: Shoot Center Jump
-#      odb_completed:
-#    transitions:
-#      - events: step1
-#        source: accrual_1
-#        target: center_ramp_1
-#      - events: step2
-#        source: center_ramp_1
-#        target: accrual_2
-#      - events: step3
-#        source: accrual_2
-#        target: center_ramp_2
-#      - events: step4
-#        source: center_ramp_2
-#        target: accrual_3
-#      - events: step4
-#        source: accrual_3
-#        target: center_ramp_3
-#      - events: step5
-#        source: center_ramp_3
-#        target: odb_completed
+state_machines:
+  odb:
+    persist_state: true
+    states:  
+      accrual_1:
+        label:
+        show_when_active:
+          show_tokens:
+            msg: Shoot each ramp
+      center_ramp_1:
+        label:
+        show_when_active:
+          show_tokens: 
+            msg: Shoot Center Jump
+      accrual_2:
+        label:
+        show_when_active:
+          show_tokens:
+            msg: Shoot each ramp
+      center_ramp_2:
+        label:
+        show_when_active:
+          show_tokens:
+           msg: Shoot Center Jump
+      accrual_3:
+        label:
+        show_when_active:
+          show_tokens:
+            msg: Shoot each ramp
+      center_ramp_3:
+        label:
+        show_when_active:
+          show_tokens:
+            msg: Shoot Center Jump
+      odb_completed:
+    transitions:
+      - events: step1
+        source: accrual_1
+        target: center_ramp_1
+      - events: step2
+        source: center_ramp_1
+        target: accrual_2
+      - events: step3
+        source: accrual_2
+        target: center_ramp_2
+      - events: step4
+        source: center_ramp_2
+        target: accrual_3
+      - events: step4
+        source: accrual_3
+        target: center_ramp_3
+      - events: step5
+        source: center_ramp_3
+        target: odb_completed
 
-#variable_player:
-#  step1:
-#    score: 10000
-#  step2:
-#    score: 15000
-#  step3:
-#    score: 20000
-#  step4:
-#    score: 25000
-#  step5: 
-#    score: 35000
-#  odb_completed:
-#    score: 200000
+variable_player:
+  step1:
+    score: 10000
+  step2:
+    score: 15000
+  step3:
+    score: 20000
+  step4:
+    score: 25000
+  step5: 
+    score: 35000
+  odb_completed:
+    score: 200000
 
-#sounds:
-#  shimmyshimmyya:
-#    volume: 0.5
-#    priority: 100 
+sounds:
+  shimmyshimmyya:
+    volume: 0.5
+    priority: 100 
 
-#timers:
-  #odb_timer:
-    #start_value: 161
-    #end_value: 0
-    #direction: down
-    #tick_interval: 1s
-    #start_running: true
+timers:
+  odb_timer:
+    start_value: 161
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: true
+
+slides:
+  odbvideo:
+    - type: video
+      video: odbedit2
+      end_behavior: loop

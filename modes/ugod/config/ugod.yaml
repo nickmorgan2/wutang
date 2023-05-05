@@ -1,4 +1,5 @@
-#config_version=5
+config_version=5
+
 mode: 
   start_events: mode_ugod_start
   stop_events: u_god_completed #, ugod_timer_complete
@@ -17,30 +18,36 @@ mode:
 
 #shots: left_orbit
 
-#counters:
-#  u_god_counter:
-#    persist_state: true
-#    count_events: left_orbit_hit
-#    starting_count: 7
-#    count_complete_value: 0
-#    direction: down
-#    events_when_complete: u_god_completed
+counters:
+  u_god_counter:
+    persist_state: true
+    count_events: left_orbit_hit
+    starting_count: 7
+    count_complete_value: 0
+    direction: down
+    events_when_complete: u_god_completed
 
-#variable_player:
-#  left_orbit_hit:
-#    score: 20000
-#  u_god_completed:
-#    score: 200000
+variable_player:
+  left_orbit_hit:
+    score: 20000
+  u_god_completed:
+    score: 200000
 
-#sounds:
-#  bizarre:
-#    volume: 0.5
-#    priority: 100 
+sounds:
+  bizarre:
+    volume: 0.5
+    priority: 100 
 
-#timers:
-  #ugod_timer:
-    #start_value: 197
-    #end_value: 0
-    #direction: down
-    #tick_interval: 1s
-    #start_running: true
+timers:
+  ugod_timer:
+    start_value: 197
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: true
+
+slides:
+  ugodvideo:
+    - type: video
+      video: ugodedit2
+      end_behavior: loop

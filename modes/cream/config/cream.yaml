@@ -1,4 +1,4 @@
-#config_version=5
+config_version=5
 
 mode:
   start_events: cream_started
@@ -46,3 +46,8 @@ player_vars:
     value_type: int
     initial_value: 2
 
+slides:
+  cream_video:
+    - type: video
+      video: creamedit2
+      end_behavior: loop

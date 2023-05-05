@@ -27,7 +27,7 @@ state_machines:
          label: 
           show_when_active:
             show_tokens:
-              msg: Shoot Orbits
+   #           msg: Shoot Orbits
       center_ramp_1:
         label:
           show_when_active:

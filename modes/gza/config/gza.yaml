@@ -99,7 +99,6 @@ timers:
 sounds:
   liquidswords:
     volume: 0.5
-    priority: 100 
 
 sound_player:
   mode_gza_started: liquidswords

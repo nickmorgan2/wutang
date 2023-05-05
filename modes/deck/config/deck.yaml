@@ -118,13 +118,20 @@ timers:
 sounds:
   movement:
     volume: 0.5
-    priority: 100 
+    
+sound_player:
+  mode_deck_started: movement
+  priority: 200
 
 slides:
   deck_video:
     - type: video
       video: deckedit2
       end_behavior: loop
+      
+slide_player:
+  mode_gza_start: deck_video
+  priority: 200
 
 widget_player:
   right_ramp: shoot_right_ramp

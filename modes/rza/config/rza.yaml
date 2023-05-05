@@ -40,7 +40,10 @@ variable_player:
 sounds:
   holocaust:
     volume: 0.5
-    priority: 100 
+
+sound_player:
+  mode_rza_start: holocaust
+  priority: 200
 
 timers:
   rza_timer:
@@ -55,3 +58,10 @@ slides:
     - type: video
       video: rzaedit2
       end_behavior: loop
+     
+slide_player:
+  mode_rza_start: rzavideo
+  priority: 200
+      
+ widget_player:
+   mode_rza_start: complete_top_lanes

@@ -37,6 +37,10 @@ sounds:
   bizarre:
     volume: 0.5
     priority: 100 
+    
+sound_player:
+  mode_ugod_start: bizarre
+  priority: 200
 
 timers:
   ugod_timer:
@@ -51,3 +55,10 @@ slides:
     - type: video
       video: ugodedit2
       end_behavior: loop
+      
+slide_player:
+  mode_ugod_start: ugodvideo
+  priority: 200
+  
+widget_player:
+  mode_ugod_start: shoot_left_orbit

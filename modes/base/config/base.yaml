@@ -257,5 +257,8 @@ widgets:
   shoot_left_right_ramp:
     - type: text
       text: Shoot Left and Right Ramp
+  complete_top_lanes:
+    - type: text
+      text: Complete Top Lanes
 
 

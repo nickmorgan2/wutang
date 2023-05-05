@@ -36,7 +36,7 @@ state_machines:
         show_when_active:
           show_tokens:
             msg: Shoot Center Ramp to Side Ramp
-      side_ramp_2
+      side_ramp_2:
         label:
         show_when_active:
           show_tokens:

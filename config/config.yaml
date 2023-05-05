@@ -401,7 +401,7 @@ flippers:
   upper_flipper:
     main_coil: c_flipper_upper_main
     hold_coil: c_flipper_upper_hold
-    activation_switch: s_upper_flipper_button_2
+    activation_switch: s_left_flipper_button_2
 
 displays:
   window:

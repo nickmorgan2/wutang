@@ -224,6 +224,9 @@ widgets:
   shoot_right_orbit:
     - type: text
       text: Shoot Right Orbit
+  shoot_left_orbit:
+    - type: text
+      text: Shoot Left Orbit
   shoot_right_ramp:
     - type: text
       text: Shoot Right Ramp

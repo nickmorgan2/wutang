@@ -245,5 +245,8 @@ widgets:
   shoot_captive_ball:
     - type: text
       text: Shoot Captive Ball
+  shoot_orbits:
+    - type: text
+      text: Shoot Orbits
 
 

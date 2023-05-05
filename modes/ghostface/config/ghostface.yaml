@@ -43,3 +43,6 @@ slides:
     - type: video
       video: ghostfaceedit2
       end_behavior: loop
+      
+widget_player:
+  mode_ghostface_start: shoot_right_ramp

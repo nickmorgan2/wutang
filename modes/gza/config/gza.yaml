@@ -101,7 +101,7 @@ sounds:
     volume: 0.5
 
 sound_player:
-  mode_gza_started: liquidswords
+  mode_gza_start: liquidswords
   priority: 200
 
 slides:

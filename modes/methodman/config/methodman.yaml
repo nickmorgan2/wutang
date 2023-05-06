@@ -15,13 +15,13 @@ mode:
 # todo add diverter rule and completion bonus
 
 shot_groups:
-  ramps:
+  meth_ramps:
     shots: shot_right_ramp, shot_left_ramp
 
 counters:
   method_man_counter:
     persist_state: true
-    count_events: ramps_hit
+    count_events: meth_ramps_hit
     starting_count: 10
     count_complete_value: 0
     direction: down

@@ -12,11 +12,11 @@ mode:
   stop_events: deck_completed #, deck_timer_completed
   priority: 1000
 
-shot_groups:
-  ramps:
-    shots: shot_right_ramp, shot_left_ramp, shot_side_ramp, shot_center_ramp
-  car: 
-    shots: shot_car_crash
+#shot_groups:
+#  ramps:
+#    shots: shot_right_ramp, shot_left_ramp, shot_side_ramp, shot_center_ramp
+#  car: 
+#    shots: shot_car_crash
 
 state_machines:
   deck:

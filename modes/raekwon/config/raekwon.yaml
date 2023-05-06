@@ -22,65 +22,65 @@ state_machines:
     persist_state: true
     states:  
       right_orbit_1:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Right Orbit to Raekwon Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Right Orbit to Raekwon Ramp
       side_ramp_1:
-        label:
-        show_when_active:
-         show tokens:
-            msg: Shoot Raekwon Ramp
-      Center_ramp_1:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Center Ramp to Side Ramp
+#        label:
+#        show_when_active:
+#         show tokens:
+#            msg: Shoot Raekwon Ramp
+      center_ramp_1:
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Center Ramp to Side Ramp
       side_ramp_2:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Raekwon Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Raekwon Ramp
       right_orbit_2:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Right Orbit to Raekwon Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Right Orbit to Raekwon Ramp
       side_ramp_3:
-        label:
-        show_when_active:
-          show_tokens:
-           msg: Shoot Raekwon Ramp
-      Center_ramp_2:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Center Ramp to Side Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#           msg: Shoot Raekwon Ramp
+      center_ramp_2:
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Center Ramp to Side Ramp
       side_ramp_4:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Raekwon Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Raekwon Ramp
       right_orbit_3:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Right Orbit to Raekwon Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Right Orbit to Raekwon Ramp
       side_ramp_5:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Raekwon Ramp
-      Center_ramp_3:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Center Ramp to Side Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Raekwon Ramp
+      center_ramp_3:
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Center Ramp to Side Ramp
       side_ramp_6:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Raekwon Ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Raekwon Ramp
       raekwon_completed:
     transitions:
       - events: step1
@@ -149,7 +149,10 @@ variable_player:
 sounds:
   icecream:
     volume: 0.5
-    priority: 100 
+    
+sound_player:
+  mode_raekwon_start: icecream
+  priority: 200
 
 timers:
   raekwon_timer:
@@ -164,3 +167,22 @@ slides:
     - type: video
       video: raekwonedit2
       end_behavior: loop
+     
+slide_player:
+  mode_raekwon_start: raekwonvideo
+  priority: 200
+
+widget_player:
+  right_orbit_1: shoot_right_orbit
+  right_orbit_2: shoot_right_orbit
+  right_orbit_3: shoot_right_orbit
+  side_ramp_1: shoot_side_ramp
+  side_ramp_2: shoot_side_ramp
+  side_ramp_3: shoot_side_ramp
+  side_ramp_4: shoot_side_ramp
+  side_ramp_5: shoot_side_ramp
+  side_ramp_6: shoot_side_ramp
+  center_ramp_1: shoot_center_ramp
+  center_ramp_2: shoot_center_ramp
+  center_ramp_3: shoot_center_ramp
+  

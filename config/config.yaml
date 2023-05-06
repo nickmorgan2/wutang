@@ -161,6 +161,14 @@ switches:
     number: A4-B1-0
   s_right_flipper_button_2:
     number: A4-B1-1
+  s_credit:
+    number: A4-B1-4
+  s_vol_down:
+    number: A4-B1-5
+  s_vol_up:
+    number: A4-B1-6
+  s_test:
+    number: A4-B1-7
 
 coils:
   c_flipper_left_main:

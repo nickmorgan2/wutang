@@ -26,55 +26,55 @@ state_machines:
     persist_state:
     states:  
       lower_scoop_1:
-        label: Lower Scoop Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Masta Killa Scoop
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
       captives_1:
-        label: Captives Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car or Captive Ball
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
       lower_scoop_2:
-        label: Lower Scoop Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Masta Killa Scoop
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
       captives_2:
-        label: Captives Lit
-        show_when_active:
-         show_tokens:
-           msg: Shoot Car or Captive Ball
+#        label: Captives Lit
+#        show_when_active:
+#         show_tokens:
+#           msg: Shoot Car or Captive Ball
       lower_scoop_3:
-        label: Lower Scoop Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Masta Killa Scoop
+#        label: Lower Scoop Lit
+ #       show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
       captives_3:
-        label: Captives Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car or Captive Ball
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
       lower_scoop_4:
-        label: Lower Scoop Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Masta Killa Scoop
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
       captives_4:
-        label: Captives Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car or Captive Ball
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
       lower_scoop_5:
-        label: Lower Scoop Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Masta Killa Scoop
+#        label: Lower Scoop Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Masta Killa Scoop
       captives_5:
-        label: Captives Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car or Captive Ball
+#        label: Captives Lit
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Car or Captive Ball
       masta_killa_completed:
     transitions:
       - events: step1
@@ -134,6 +134,10 @@ sounds:
   oldman:
     volume: 0.5
     priority: 100 
+    
+sound_player:
+  mode_mastakilla_started: oldman
+  priority: 200
 
 timers:
   mastakilla_timer:
@@ -148,3 +152,19 @@ slides:
     - type: video
       video: mastakillaedit2
       end_behavior: loop
+   
+slide_player:
+  mode_mastakilla_start: mastakilla_video
+  priority: 200
+      
+widget_player:
+  lower_scoop_1: shoot_lower_scoop
+  lower_scoop_2: shoot_lower_scoop
+  lower_scoop_3: shoot_lower_scoop
+  lower_scoop_4: shoot_lower_scoop
+  lower_scoop_5: shoot_lower_scoop
+  captives_1: shoot_captives
+  captives_2: shoot_captives
+  captives_3: shoot_captives
+  captives_4: shoot_captives
+  captives_5: shoot_captives

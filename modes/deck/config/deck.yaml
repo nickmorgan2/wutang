@@ -24,44 +24,44 @@ state_machines:
     states:
       right_ramp:
         label: Right Ramp Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Right Ramp
+ #       show_when_active:
+ #         show_tokens:
+ #           msg: Shoot Right Ramp
       car_shot_1:
         label: Car Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car
+ #       show_when_active:
+ #         show_tokens:
+ #           msg: Shoot Car
       car_shot_2:
         label: Car Lit
-        show_when_active:
-          show_tokens:
-           msg: Shoot Car
+ #       show_when_active:
+ #         show_tokens:
+ #          msg: Shoot Car
       car_shot_3:
         label: Car Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car
+  #      show_when_active:
+  #        show_tokens:
+  #          msg: Shoot Car
       car_shot_4:
         label: Car Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Car
+  #      show_when_active:
+  #        show_tokens:
+  #          msg: Shoot Car
       center_ramp: 
         label: Center Ramp Lit
-        show_when_active: 
-          show_tokens:
-           msg: Shoot Center Ramp
+   #     show_when_active: 
+   #       show_tokens:
+   #        msg: Shoot Center Ramp
       left_ramp:
         label: Left Ramp Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Left Ramp
+   #     show_when_active:
+   #       show_tokens:
+   #         msg: Shoot Left Ramp
       side_ramp:
         label: Side Ramp Lit
-        show_when_active:
-          show_tokens:
-            msg: Shoot Side Ramp
+   #     show_when_active:
+   #       show_tokens:
+   #         msg: Shoot Side Ramp
       deck_completed:
     transitions:
       - events: step1
@@ -118,10 +118,27 @@ timers:
 sounds:
   movement:
     volume: 0.5
-    priority: 100 
+    
+sound_player:
+  mode_deck_started: movement
+  priority: 200
 
 slides:
   deck_video:
     - type: video
       video: deckedit2
       end_behavior: loop
+      
+slide_player:
+  mode_gza_start: deck_video
+  priority: 200
+
+widget_player:
+  right_ramp: shoot_right_ramp
+  car_shot_1: shoot_cars
+  car_shot_2: shoot_cars
+  car_shot_3: shoot_cars
+  car_shot_4: shoot_cars
+  left_ramp: shoot_left_ramp
+  center_ramp: shoot_center_ramp
+  side_ramp: shoot_side_ramp

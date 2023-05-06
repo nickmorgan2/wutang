@@ -28,7 +28,10 @@ variable_player:
 sounds:
   cherchezlaghost:
     volume: 0.5
-    priority: 100 
+
+sound_player:
+  mode_ghostface_start: cherchezlaghost
+  priority: 200
 
 timers:
   ghostface_timer:
@@ -43,3 +46,10 @@ slides:
     - type: video
       video: ghostfaceedit2
       end_behavior: loop
+      
+slide_player:
+  mode_ghostface_start: ghostface_video
+  priority: 200
+      
+widget_player:
+  mode_ghostface_start: shoot_right_ramp

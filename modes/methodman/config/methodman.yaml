@@ -36,7 +36,10 @@ variable_player:
 sounds:
   methodman:
     volume: 0.5
-    priority: 100 
+
+sound_player:
+  mode_methodman_start: methodman
+  priority: 200
 
 timers:
   methodman_timer:
@@ -51,3 +54,10 @@ slides:
     - type: video
       video: methodmanedit2
       end_behavior: loop
+      
+slide_player:
+  mode_methodman_start: methodmanvideo
+  priority: 200
+      
+widget_player:
+  mode_methodman_start: shoot_left_right_ramp

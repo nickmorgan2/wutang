@@ -210,16 +210,58 @@ sound_player:
   s_upper_slingshot_active: scratch3
   #s_start_active: playliststart
 
-#playlists:
- # playliststart:
-  #  shuffle: true
-   # repeat: false
-    #sounds:
-     # - start1
-      #- start2
-      #- start3
-      #- upfromthe36
+playlists:
+  playliststart:
+    shuffle: true
+    repeat: false
+    sounds:
+      - start1
+      - start2
+      - start3
+      - upfromthe36
 
-  
+widgets:
+  shoot_right_orbit:
+    - type: text
+      text: Shoot Right Orbit
+  shoot_left_orbit:
+    - type: text
+      text: Shoot Left Orbit
+  shoot_right_ramp:
+    - type: text
+      text: Shoot Right Ramp
+  shoot_side_ramp:
+    - type: text
+      text: Shoot Side Ramp
+  shoot_center_ramp:
+    - type: text
+      text: Shoot Center Jump
+  shoot_left_ramp:
+    - type: text
+      text: Shoot Left Ramp
+  shoot_ramps:
+    - type: text
+      text: Shoot Ramps
+  shoot_cars:
+    - type: text
+      text: Shoot Cars
+  shoot_captive_ball:
+    - type: text
+      text: Shoot Captive Ball
+  shoot_orbits:
+    - type: text
+      text: Shoot Orbits
+  shoot_lower_scoop:
+    - type: text
+      text: Shoot Masta Killa Scoop
+  shoot_captives:
+    - type: text
+      text: Shoot Car or Captive Ball
+  shoot_left_right_ramp:
+    - type: text
+      text: Shoot Left and Right Ramp
+  complete_top_lanes:
+    - type: text
+      text: Complete Top Lanes
 
 

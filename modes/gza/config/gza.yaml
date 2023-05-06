@@ -24,35 +24,35 @@ state_machines:
     persist_state: true 
     states:  
       orbits_1:
-         label: 
-          show_when_active:
-            show_tokens:
+   #      label: 
+   #       show_when_active:
+   #         show_tokens:
    #           msg: Shoot Orbits
       center_ramp_1:
-        label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Center Jump
+   #     label:
+   #       show_when_active:
+   #         show_tokens:
+   #           msg: Shoot Center Jump
       orbits_2:
-       label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Orbits
+  #     label:
+  #        show_when_active:
+  #          show_tokens:
+  #            msg: Shoot Orbits
       center_ramp_2:
-        label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Center Jump
+  #      label:
+  #        show_when_active:
+  #          show_tokens:
+  #            msg: Shoot Center Jump
       orbits_3:
-       label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Orbits
+  #     label:
+  #        show_when_active:
+  #          show_tokens:
+  #            msg: Shoot Orbits
       center_ramp_3:
-        label:
-          show_when_active:
-            show_tokens:
-              msg: Shoot Center Jump
+  #      label:
+  #        show_when_active:
+  #          show_tokens:
+  #            msg: Shoot Center Jump
       gza_completed:
     transitions:
       - events: step1
@@ -99,10 +99,25 @@ timers:
 sounds:
   liquidswords:
     volume: 0.5
-    priority: 100 
+
+sound_player:
+  mode_gza_start: liquidswords
+  priority: 200
 
 slides:
   gza_video:
     - type: video
       video: gzaedit2
       end_behavior: loop
+      
+slide_player:
+  mode_gza_start: gza_video
+  priority: 200
+      
+widget_player:
+  orbits_1: shoot_orbits
+  orbits_2: shoot_orbits
+  orbits_3: shoot_orbits
+  center_ramp_1: shoot_center_ramp
+  center_ramp_2: shoot_center_ramp
+  center_ramp_3: shoot_center_ramp

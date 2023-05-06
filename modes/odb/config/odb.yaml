@@ -34,35 +34,35 @@ state_machines:
     persist_state: true
     states:  
       accrual_1:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot each ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
       center_ramp_1:
-        label:
-        show_when_active:
-          show_tokens: 
-            msg: Shoot Center Jump
+#        label:
+#        show_when_active:
+#          show_tokens: 
+#            msg: Shoot Center Jump
       accrual_2:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot each ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
       center_ramp_2:
-        label:
-        show_when_active:
-          show_tokens:
-           msg: Shoot Center Jump
+#        label:
+#        show_when_active:
+#          show_tokens:
+#           msg: Shoot Center Jump
       accrual_3:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot each ramp
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot each ramp
       center_ramp_3:
-        label:
-        show_when_active:
-          show_tokens:
-            msg: Shoot Center Jump
+#        label:
+#        show_when_active:
+#          show_tokens:
+#            msg: Shoot Center Jump
       odb_completed:
     transitions:
       - events: step1
@@ -101,7 +101,10 @@ variable_player:
 sounds:
   shimmyshimmyya:
     volume: 0.5
-    priority: 100 
+    
+sound_player:
+  mode_odb_start: shimmyshimmyya
+  priority: 200
 
 timers:
   odb_timer:
@@ -116,3 +119,15 @@ slides:
     - type: video
       video: odbedit2
       end_behavior: loop
+    
+slide_player:
+  mode_odb_start: odbvideo
+  priority: 200
+      
+widget_player:
+  center_ramp_1: shoot_center_ramp
+  center_ramp_2: shoot_center_ramp
+  center_ramp_3: shoot_center_ramp
+  accrual_1: shoot_ramps
+  accrual_2: shoot_ramps
+  accrual_3: shoot_ramps

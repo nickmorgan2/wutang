@@ -209,7 +209,7 @@ show_player:
       show_tokens:
         sound_to_play: mkqual1
 
-sound_player:
+playlist_player:
   s_chase_car_1_hit: playlistdeckqual
   s_top_popper_hit: playlistugodqual
   s_left_ramp_exit_hit: playlistmethodqual

@@ -1,6 +1,6 @@
 #config_version=5
 
-mode: 
+mode:
   start_events: mode_rza_start
   stop_events: rza_completed #, rza_timer_complete
   priority: 1000
@@ -63,5 +63,5 @@ slide_player:
   mode_rza_start: rzavideo
   priority: 200
       
- widget_player:
+widget_player:
    mode_rza_start: complete_top_lanes

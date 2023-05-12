@@ -13,7 +13,7 @@ game:
 
 modes:
   - base
-  - skill
+#  - skill
 #  - carousel
 #  - mastakilla
 #  - deck
@@ -24,7 +24,7 @@ modes:
 #  - gza
 #  - raekwon
 #  - rza
-  - qualify
+#  - qualify
   - tilt
   - service
 

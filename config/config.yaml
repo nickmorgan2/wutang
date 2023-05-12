@@ -613,7 +613,16 @@ autofire_coils:
     switch: s_right_jet_bumper 
   hive_jet:
     coil: c_hive_jet
-    switch: s_hive_jet 
+    switch: s_hive_jet
+  bottom_popper:
+    coil: c_bottom_popper
+    switch: s_bottom_popper
+  top_popper:
+    coil: c_top_popper
+    switch: s_top_popper
+  hive_popper:
+    coil: c_hive_popper
+    switch: s_hive_scoop
     
 diverters:
   ramp_diverter:

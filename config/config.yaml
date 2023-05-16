@@ -6,6 +6,10 @@ hardware:
   
 p_roc:
   driverboards: pdb
+  
+machine:
+  balls_installed: 6
+  min_balls: 2
 
 game:
   balls_per_game: 3

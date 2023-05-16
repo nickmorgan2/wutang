@@ -17,18 +17,18 @@ game:
 
 modes:
   - base
-#  - skill
+  - skill
 #  - carousel
-#  - mastakilla
-#  - deck
-#  - ugod
-#  - methodman
-#  - odb
-#  - ghostface
-#  - gza
-#  - raekwon
-#  - rza
-#  - qualify
+  - mastakilla
+  - deck
+  - ugod
+  - methodman
+  - odb
+  - ghostface
+  - gza
+  - raekwon
+  - rza
+  - qualify
   - tilt
   - service
 

@@ -465,9 +465,9 @@ slide_player:
 
 keyboard:
   z:
-    switch: s_left_flipper
+    switch: s_left_flipper_button_1
   '/':
-    switch: s_right_flipper
+    switch: s_right_flipper_button_1
   s:
     switch: s_start
   q:
@@ -525,7 +525,7 @@ keyboard:
   ';':
     switch: s_left_ramp_enter
   x:
-    switch: s_left_ramp_exit
+    switch: s_left_flipper_button_2
   c:
     switch: side_ramp_enter
   v:

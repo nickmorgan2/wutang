@@ -136,56 +136,56 @@ variable_player:
   rza_complete:
     rza_qualified: 1
 
-playlists:
-  playlistdeckqual:
-    shuffle: false
-    repeat: false
-    sounds:
-      - deckqual1
-      - deckqual2
-      - deckqual3
-  playlistghostfacequal:
-    shuffle: false
-    repeat: false
-    sounds:
-      - ghostfacequal1
-      - ghostfacequal2
-      - ghostfacequal3
-  playlistmethodqual:
-    shuffle: false
-    repeat: false
-    sounds:
-      - methodqual1
-      - methodqual2
-      - methodqual2
-  playlistmkqual:
-    shuffle: false
-    repeat: false
-    sounds:
-      - mkqual1
-      - mkqual2
-      - mkqual2
-  playlistodbqual:
-    shuffle: false
-    repeat: false
-    sounds:
-      - odbqual1
-      - odbqual2
-      - odbqual3
-  playlistraekwonqual:
-    shuffle: false
-    repeat: false
-    sounds:
-      - raekwonqual1
-      - raekwonqual2
-      - raekwonqual2
-  playlistugodqual:
-    shuffle: false
-    repeat: false
-    sounds:
-      - ugodqual1
-      - ugodqual2
-      - ugodqual3
+#playlists:
+#  playlistdeckqual:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - deckqual1
+#      - deckqual2
+#      - deckqual3
+#  playlistghostfacequal:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - ghostfacequal1
+#      - ghostfacequal2
+#      - ghostfacequal3
+#  playlistmethodqual:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - methodqual1
+#      - methodqual2
+#      - methodqual2
+#  playlistmkqual:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - mkqual1
+#      - mkqual2
+#      - mkqual2
+#  playlistodbqual:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - odbqual1
+#      - odbqual2
+#      - odbqual3
+#  playlistraekwonqual:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - raekwonqual1
+#      - raekwonqual2
+#      - raekwonqual2
+#  playlistugodqual:
+#    shuffle: false
+#    repeat: false
+#    sounds:
+#      - ugodqual1
+#      - ugodqual2
+#      - ugodqual3
  
 #playlist_player:
 #  shot_bottom_scoop_hit:
@@ -202,23 +202,23 @@ shows:
       events:
         play_sound: {"sound": (sound_to_play), "volume": 0.7, "loops": 0}
 
-show_player:
+#show_player:
   # MKqualifier
-  shot_bottom_scoop_hit{count==1}:
-    play_qual_sound:
-      show_tokens:
-        sound_to_play: mkqual1
+#  shot_bottom_scoop_hit{count==1}:
+#    play_qual_sound:
+#      show_tokens:
+#        sound_to_play: mkqual1
 
-playlist_player:
-  s_chase_car_1_hit: playlistdeckqual
-  s_top_popper_hit: playlistugodqual
-  s_left_ramp_exit_hit: playlistmethodqual
-  s_center_ramp_hit: playlistodbqual
-  shot_bottom_scoop_hit: playlistmkqual
-  s_side_ramp_hit: playlistraekwonqual
-  rollover_complete: playlistrzaqual
-  s_right_ramp_exit_hit: playlistghostfacequal
-  gza_qualify_counter_complete: gzaqual3
+#playlist_player:
+#  s_chase_car_1_hit: playlistdeckqual
+#  s_top_popper_hit: playlistugodqual
+#  s_left_ramp_exit_hit: playlistmethodqual
+#  s_center_ramp_hit: playlistodbqual
+#  shot_bottom_scoop_hit: playlistmkqual
+#  s_side_ramp_hit: playlistraekwonqual
+#  rollover_complete: playlistrzaqual
+#  s_right_ramp_exit_hit: playlistghostfacequal
+#  gza_qualify_counter_complete: gzaqual3
   
 slides:
   deck_qualified_slide:

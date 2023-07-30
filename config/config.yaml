@@ -139,7 +139,7 @@ switches:
   s_top_popper:
     number: A2-B1-3
   s_bottom_popper:
-    number: A1-B0-3
+    number: A1-B0-4
   s_lower_rebound:
     number: A1-B1-0
   s_hive_scoop:

@@ -123,7 +123,7 @@ switches:
   s_left_loop:
     number: A3-B1-4
   s_left_rollover:
-    number: A2-B0-5
+    number: A2-B0-6
   s_center_rollover:
     number: A2-B0-2
   s_right_rollover:

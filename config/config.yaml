@@ -80,10 +80,10 @@ switches:
     number: A0-B0-0
   s_left_inlane:
     number: A0-B0-1
-  s_slam_tilt:
-    number: A4-B0-1
-  s_coin_door_closed:
-    number: A4-B0-5
+#  s_slam_tilt:
+#    number: A4-B0-1
+#  s_coin_door_closed:
+#    number: A4-B0-5
   s_standup_1:
     number: A1-B0-7
   s_standup_2:
@@ -118,8 +118,8 @@ switches:
     number: A2-B1-5
   s_center_ramp:
     number: A2-B1-2
-  s_right_spinner:
-    number: A1-B0-0
+#  s_right_spinner:
+#    number: A1-B0-0
   s_left_loop:
     number: A3-B1-4
   s_left_rollover:
@@ -167,14 +167,14 @@ switches:
     number: A4-B1-0
   s_right_flipper_button_2:
     number: A4-B1-1
-  s_credit:
-    number: A4-B1-4
-  s_vol_down:
-    number: A4-B1-5
-  s_vol_up:
-    number: A4-B1-6
-  s_test:
-    number: A4-B1-7
+#  s_credit:
+#    number: A4-B1-4
+#  s_vol_down:
+#    number: A4-B1-5
+#  s_vol_up:
+#    number: A4-B1-6
+#  s_test:
+#    number: A4-B1-7
 
 coils:
   c_flipper_left_main:
@@ -223,8 +223,8 @@ coils:
     number: A0-B0-5
   c_left_saucer:
     number: A1-B1-0
-  c-knocker:
-    number: A0-B1-4
+#  c-knocker:
+#    number: A0-B1-4
     
 #lights:
 #  rear_car_crash:
@@ -408,14 +408,17 @@ flippers:
     main_coil: c_flipper_left_main
     hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper_button_1
+    enable_events: machine_reset_phase_3
   right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper_button_1
+    enable_events: machine_reset_phase_3
   upper_flipper:
     main_coil: c_flipper_upper_main
     hold_coil: c_flipper_upper_hold
     activation_switch: s_left_flipper_button_2
+    enable_events: machine_reset_phase_3
 
 displays:
   window:
@@ -630,16 +633,16 @@ autofire_coils:
     coil: c_hive_popper
     switch: s_hive_scoop
     
-diverters:
-  ramp_diverter:
-    activation_coil: c_diverter
-    type: hold
-    activation_time: 3s
-    activation_switches: s_right_ramp_enter
-    enable_events: ball_started
-    disable_events: ball_ended, diverter_open
-    targets_when_active: playfield
-    targets_when_inactive: playfield
+#diverters:
+#  ramp_diverter:
+#    activation_coil: c_diverter
+#    type: hold
+#    activation_time: 3s
+#    activation_switches: s_right_ramp_enter
+#    enable_events: ball_started
+#    disable_events: ball_ended, diverter_open
+#    targets_when_active: playfield
+#    targets_when_inactive: playfield
 
 ball_saves:
   default:

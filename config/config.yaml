@@ -9,7 +9,7 @@ p_roc:
   
 machine:
   balls_installed: 6
-  min_balls: 2
+  min_balls: 0
 
 game:
   balls_per_game: 3

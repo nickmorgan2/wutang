@@ -8,7 +8,7 @@ p_roc:
   driverboards: pdb
   
 machine:
-  balls_installed: 6
+  balls_installed: 0
   min_balls: 0
 
 game:

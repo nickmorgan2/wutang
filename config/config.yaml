@@ -28,7 +28,7 @@ modes:
 #  - gza
 #  - raekwon
 #  - rza
-#  - qualify
+  - qualify
   - tilt
   - service
 
@@ -89,7 +89,7 @@ switches:
   s_standup_2:
     number: A1-B0-5
   s_standup_3:
-    number: A1-B0-3
+    number: A1-B0-4
   s_standup_4:
     number: A1-B0-2
   s_standup_5:
@@ -139,7 +139,7 @@ switches:
   s_top_popper:
     number: A2-B1-3
   s_bottom_popper:
-    number: A1-B0-4
+    number: A1-B0-3
   s_lower_rebound:
     number: A1-B1-0
   s_hive_scoop:

@@ -7,71 +7,88 @@ player:
     top: []
     total: 0
 shots:
-  shot_bottom_scoop: 281
-  shot_captive_ball: 2
-  shot_car_crash: 6
-  shot_center_ramp: 27
-  shot_left_orbit: 17
-  shot_left_ramp: 21
-  shot_side_ramp: 9
-  skill_mk: 156
-  skill_raekwon: 9
-  skill_rza: 4
+  shot_bottom_scoop: 302
+  shot_captive_ball: 16
+  shot_car_crash: 10
+  shot_center_ramp: 72
+  shot_left_orbit: 34
+  shot_left_ramp: 28
+  shot_right_orbit: 1406
+  shot_right_ramp: 20
+  shot_side_ramp: 22
+  skill_mk: 177
+  skill_raekwon: 40
+  skill_rza: 7
 switches:
-  s_bottom_popper: 281
-  s_captive_ball_standup: 2
-  s_center_ramp: 27
-  s_center_rollover: 4
-  s_chase_car_1: 6
-  s_chase_car_2: 8
+  s_bottom_popper: 303
+  s_captive_ball_standup: 16
+  s_center_ramp: 72
+  s_center_rollover: 7
+  s_chase_car_1: 10
+  s_chase_car_2: 21
   s_chase_car_standup: 0
   s_coin_door_closed: 1
+  s_credit: 0
   s_hive-jet: 0
   s_hive_exit_eject: 2
   s_hive_exit_left_inlane: 1
   s_hive_exit_pops: 1
   s_hive_exit_subway: 1
-  s_launch_button: 112
-  s_left_flipper: 0
-  s_left_inlane: 2
-  s_left_jet_bumper: 41
-  s_left_loop: 17
-  s_left_outlane: 1
-  s_left_ramp_enter: 35
-  s_left_ramp_exit: 30
-  s_left_rollover: 7
+  s_hive_jet: 3
+  s_hive_scoop: 0
+  s_launch_button: 202
+  s_left_flipper: 253
+  s_left_flipper_button_1: 214
+  s_left_flipper_button_2: 29
+  s_left_inlane: 9
+  s_left_jet_bumper: 115
+  s_left_loop: 34
+  s_left_outlane: 3
+  s_left_ramp_enter: 58
+  s_left_ramp_exit: 40
+  s_left_rollover: 10
   s_left_saucer: 65
-  s_left_slingshot: 41
-  s_lower_rebound: 2
-  s_plumb_bob: 14
-  s_plunger_lane: 85
-  s_right_flipper: 0
-  s_right_inlane: 1
-  s_right_jet_bumper: 27
-  s_right_loop: 0
-  s_right_ramp_enter: 22
-  s_right_ramp_exit: 14
-  s_right_rollover: 1
-  s_right_slingshot: 18
+  s_left_slingshot: 64
+  s_lower_rebound: 216
+  s_plumb_bob: 16
+  s_plunger_lane: 106
+  s_right_flipper: 223
+  s_right_flipper_button_1: 248
+  s_right_flipper_button_2: 7
+  s_right_inlane: 5
+  s_right_jet_bumper: 51
+  s_right_loop: 1406
+  s_right_outlane: 2
+  s_right_ramp_enter: 67
+  s_right_ramp_exit: 36
+  s_right_rollover: 5
+  s_right_slingshot: 27
   s_right_spinner: 5
   s_ring_ramp: 3
-  s_side_ramp_enter: 35
-  s_side_ramp_exit: 37
+  s_service_down: 0
+  s_service_enter: 0
+  s_service_esc: 0
+  s_service_up: 0
+  s_side_ramp_enter: 85
+  s_side_ramp_exit: 68
   s_slam_tilt: 8
-  s_standup_1: 14
-  s_standup_2: 7
-  s_standup_3: 24
-  s_standup_4: 12
-  s_standup_5: 1
-  s_start: 13
-  s_top_popper: 8
+  s_standup_1: 36
+  s_standup_2: 13
+  s_standup_3: 41
+  s_standup_4: 59
+  s_standup_5: 29
+  s_start: 26
+  s_test: 0
+  s_top_popper: 15
   s_trough1: 2
   s_trough2: 0
-  s_trough3: 0
-  s_trough4: 0
-  s_trough5: 0
+  s_trough3: 1
+  s_trough4: 23
+  s_trough5: 13
   s_trough6: 0
   s_trough_jam: 2
-  s_upper_flipper: 1
-  s_upper_rebound: 17
-  s_upper_slingshot: 45
+  s_upper_flipper: 109
+  s_upper_rebound: 33
+  s_upper_slingshot: 53
+  s_vol_down: 0
+  s_vol_up: 0

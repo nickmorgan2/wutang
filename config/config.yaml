@@ -8,7 +8,7 @@ p_roc:
   driverboards: pdb
   
 machine:
-  balls_installed: 6
+  balls_installed: 0
   min_balls: 0
 
 game:
@@ -28,7 +28,7 @@ modes:
 #  - gza
 #  - raekwon
 #  - rza
-#  - qualify
+  - qualify
   - tilt
   - service
 
@@ -82,14 +82,15 @@ switches:
     number: A0-B0-1
 #  s_slam_tilt:
 #    number: A4-B0-1
-#  s_coin_door_closed:
-#    number: A4-B0-5
+#  s_coin_door_open:
+#    number: A4-B1-2
+#    tags: service_door_open
   s_standup_1:
     number: A1-B0-7
   s_standup_2:
     number: A1-B0-5
   s_standup_3:
-    number: A1-B0-3
+    number: A1-B0-4
   s_standup_4:
     number: A1-B0-2
   s_standup_5:
@@ -139,7 +140,7 @@ switches:
   s_top_popper:
     number: A2-B1-3
   s_bottom_popper:
-    number: A1-B0-4
+    number: A1-B0-3
   s_lower_rebound:
     number: A1-B1-0
   s_hive_scoop:
@@ -167,14 +168,18 @@ switches:
     number: A4-B1-0
   s_right_flipper_button_2:
     number: A4-B1-1
-#  s_credit:
-#    number: A4-B1-4
-#  s_vol_down:
-#    number: A4-B1-5
-#  s_vol_up:
-#    number: A4-B1-6
-#  s_test:
-#    number: A4-B1-7
+  s_service_enter:
+    number: A4-B1-3
+    tags: service_enter
+  s_service_down:
+    number: A4-B1-4
+    tags: service_down
+  s_service_up:
+    number: A4-B1-5
+    tags: service_up
+  s_service_esc:
+    number: A4-B1-6
+    tags: service_esc
 
 coils:
   c_flipper_left_main:
@@ -190,10 +195,10 @@ coils:
     number: A1-B0-3
     allow_enable: true
   c_flipper_upper_main:
-    number: A0-B0-0
+    number: A1-B1-4
     default_pulse_ms: 20
   c_flipper_upper_hold:
-    number: A0-B0-1
+    number: A1-B1-7
     allow_enable: true
   c_trough_eject:
     number: A1-B0-0
@@ -204,32 +209,32 @@ coils:
   c_top_popper:
     number: A0-B1-0
   c_bottom_popper:
-    number: A0-B0-2
+    number: A1-B1-6
   c_hive_jet:
     number: A0-B1-2
   c_hive_popper:
     number: A0-B1-1
   c_diverter:
-    number: A0-B0-7
+    number: A0-B1-7
   c_left_slingshot:
     number: A1-B0-7
   c_right_slingshot:
     number: A1-B0-6
   c_upper_slingshot:
-    number: A0-B0-4
+    number: A0-B1-4
   c_left_jet_bumper:
-    number: A0-B0-6
+    number: A0-B1-6
   c_right_jet_bumper:
-    number: A0-B0-5
+    number: A0-B1-5
   c_left_saucer:
     number: A1-B1-0
 #  c-knocker:
 #    number: A0-B1-4
     
-#lights:
-#  rear_car_crash:
-#    number: 0
-#    type: grb
+lights:
+  #rear_car_crash:
+  # number: 0
+  # type: grb
   #odb_ramp_8:
   #  number: 1
   #  type: grb
@@ -512,7 +517,8 @@ keyboard:
   o:
     switch: s_standup_4
   p:
-    switch: s_standup_5
+    switch: s_coin_door_open
+#    switch: s_standup_5
   a:
     switch: s_left_slingshot
   d:
@@ -563,6 +569,14 @@ keyboard:
     switch: s_captive_ball_standup
   'n':
     switch: s_left_saucer
+  right:
+    switch: s_service_enter
+  left:
+    switch: s_service_esc
+  up:
+    switch: s_service_up
+  down:
+    switch: s_service_down
 
 ball_devices:
   bd_trough:
@@ -591,10 +605,10 @@ ball_devices:
     ball_switches: s_left_saucer
     eject_coil: c_left_saucer
     eject_timeouts: 3s
-  bd_hive_popper:
-    ball_switches: s_hive_scoop
-    eject_coil: c_hive_popper
-    eject_timeouts: 1s
+ # bd_hive_popper:
+ #   ball_switches: s_hive_scoop
+ #   eject_coil: c_hive_popper
+ #   eject_timeouts: 1s
 
 virtual_platform_start_active_switches:
   - s_trough1

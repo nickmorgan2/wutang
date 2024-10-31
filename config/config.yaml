@@ -605,10 +605,6 @@ ball_devices:
     ball_switches: s_left_saucer
     eject_coil: c_left_saucer
     eject_timeouts: 3s
- # bd_hive_popper:
- #   ball_switches: s_hive_scoop
- #   eject_coil: c_hive_popper
- #   eject_timeouts: 1s
 
 virtual_platform_start_active_switches:
   - s_trough1

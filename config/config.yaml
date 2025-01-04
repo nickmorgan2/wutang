@@ -100,7 +100,7 @@ switches:
   s_right_slingshot:
     number: A0-B0-5
   s_upper_slingshot:
-    number: A2-B0-7
+    number: A2-B0-6
   s_left_jet_bumper:
     number: A2-B0-5
   s_right_jet_bumper:

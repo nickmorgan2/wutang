@@ -124,11 +124,11 @@ switches:
   s_left_loop:
     number: A3-B1-4
   s_left_rollover:
-    number: A2-B0-6
+    number: A2-B0-3
   s_center_rollover:
     number: A2-B0-2
   s_right_rollover:
-    number: A2-B0-3
+    number: A2-B0-1
   s_chase_car_1:
     number: A3-B1-3
   s_chase_car_2:
